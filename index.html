@@ -443,28 +443,6 @@
         </div>
 
         <div class="flex items-center gap-4 lg:gap-6">
-          <!-- Language switcher desktop -->
-          <div class="hidden lg:flex items-center">
-            <label for="lang-switcher" class="sr-only">Language</label>
-            <div class="relative">
-              <select
-                id="lang-switcher"
-                class="bg-transparent rounded-full px-4 py-2 pr-10 text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] cursor-pointer min-h-[44px]
-                       !border-0 !ring-0 !shadow-none !outline-none
-                       focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
-                       focus-visible:!ring-0 focus-visible:!outline-none"
-                >
-                <option value="nl">NL</option>
-                <option value="en">EN</option>
-                <option value="fr">FR</option>
-              </select>
-              <span
-                class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none opacity-50"
-                aria-hidden="true"
-                >expand_more</span
-              >
-            </div>
-          </div>
 
           <a
             class="hidden xl:flex items-center hover:opacity-85 transition-opacity"
@@ -1326,9 +1304,46 @@
     <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div class="flex items-center gap-3">
-            <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="lazy" decoding="async" />
-          </div>
+          <div class="flex items-center gap-4">
+            <img
+              src="assets/img/sandstone-logo.png"
+              alt="Sandstone"
+              class="h-20 w-auto"
+              loading="lazy"
+              decoding="async"
+            />
+          
+            <!-- Compact language switcher -->
+            <div class="flex items-center gap-4">
+              <img
+                src="assets/img/sandstone-logo.png"
+                alt="Sandstone"
+                class="h-20 w-auto"
+                loading="lazy"
+                decoding="async"
+              />
+            
+              <div class="relative">
+                <select
+                  id="lang-switcher-footer"
+                  class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)]
+                         cursor-pointer pr-5 transition-colors
+                         !border-0 !ring-0 !shadow-none !outline-none
+                         focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                         focus-visible:!ring-0"
+                >
+                  <option value="nl">NL</option>
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                </select>
+            
+                <span
+                  class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40"
+                >
+                  expand_more
+                </span>
+              </div>
+            </div>
 
           <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
             <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">Privacy Policy</a>
@@ -1364,28 +1379,6 @@
                 ></path>
               </svg>
             </a>
-          </div>
-        </div>
-        
-        <!-- Language switcher mobile only -->
-        <div class="w-full max-w-xs mx-auto mt-6 md:hidden">
-          <label for="lang-switcher-footer" class="sr-only">Language</label>
-          <div class="relative">
-            <select
-              id="lang-switcher-footer"
-              class="w-full bg-transparent rounded-full px-5 py-4 pr-12 font-bold text-[var(--deep-navy)]/70 cursor-pointer min-h-[54px]
-                     !border-0 !ring-0 !shadow-none !outline-none
-                     focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
-                     focus-visible:!ring-0"
-            >
-              <option value="nl">NL</option>
-              <option value="en">EN</option>
-              <option value="fr">FR</option>
-            </select>
-        
-            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-50">
-              expand_more
-            </span>
           </div>
         </div>
         
