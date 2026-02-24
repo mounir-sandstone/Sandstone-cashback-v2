@@ -548,24 +548,6 @@
             </a>
           </div>
         </div>
-
-    <!-- Language switcher mobile -->
-        <div class="w-full max-w-sm mt-2">
-          <label for="lang-switcher-mobile" class="sr-only">Language</label>
-          <div class="relative">
-            <select
-              id="lang-switcher-mobile"
-              class="w-full bg-transparent rounded-full px-5 py-4 pr-12 font-bold text-[var(--deep-navy)] focus:outline-none focus-visible:ring-0 focus-visible:ring-[#c5a367]/40 min-h-[54px] cursor-pointer"
-            >
-              <option value="nl">NL</option>
-              <option value="en">EN</option>
-              <option value="fr">FR</option>
-            </select>
-            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-50" aria-hidden="true"
-              >expand_more</span
-            >
-          </div>
-        </div>
       </div>
     </div>
     
@@ -1384,7 +1366,29 @@
             </a>
           </div>
         </div>
-
+        
+        <!-- Language switcher mobile only -->
+        <div class="w-full max-w-xs mx-auto mt-6 md:hidden">
+          <label for="lang-switcher-footer" class="sr-only">Language</label>
+          <div class="relative">
+            <select
+              id="lang-switcher-footer"
+              class="w-full bg-transparent rounded-full px-5 py-4 pr-12 font-bold text-[var(--deep-navy)]/70 cursor-pointer min-h-[54px]
+                     !border-0 !ring-0 !shadow-none !outline-none
+                     focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                     focus-visible:!ring-0"
+            >
+              <option value="nl">NL</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+        
+            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-50">
+              expand_more
+            </span>
+          </div>
+        </div>
+        
         <div class="mt-8 pt-8 border-t border-[var(--deep-navy)]/5 text-center">
           <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
             © 2026 Sandstone. All Rights Reserved. Sandstone Project Management Services L.L.C. (License NO #1275831) trading as 'Sandstone' | TRN: 104337349500003
