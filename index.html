@@ -1302,70 +1302,78 @@
     </main>     
     
     <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
-      <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center gap-8">
+
         <!-- Logo + Language -->
-            <div class="flex items-center justify-center gap-4">
-              <img
-                src="assets/img/sandstone-logo.png"
-                alt="Sandstone"
-                class="h-20 w-auto"
-                loading="lazy"
-                decoding="async"
-              />
-          
-              <div class="relative">
-                <select
-                  id="lang-switcher-footer"
-                  class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)]
-                         cursor-pointer pr-5 transition-colors
-                         !border-0 !ring-0 !shadow-none !outline-none
-                         focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
-                         focus-visible:!ring-0"
-                >
-                  <option value="nl">NL</option>
-                  <option value="en">EN</option>
-                  <option value="fr">FR</option>
-                </select>
-          
-                <span
-                  class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40"
-                >
-                  expand_more
-                </span>
-              </div>
-            </div>
-
-          <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
-            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">Privacy Policy</a>
-            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/terms-of-service">Terms of Service</a>
-            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/disclaimer">Disclaimer</a>
-          </div>
-
-         <!-- Social icons -->
-          <div class="flex justify-center items-center gap-6">
-            <a
-              class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
-              href="https://www.linkedin.com/company/101424846/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Sandstone op LinkedIn"
+        <div class="flex items-center justify-center gap-4">
+          <img
+            src="assets/img/sandstone-logo.png"
+            alt="Sandstone"
+            class="h-20 w-auto"
+            loading="lazy"
+            decoding="async"
+          />
+      
+          <div class="relative">
+            <select
+              id="lang-switcher-footer"
+              class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)]
+                     cursor-pointer pr-5 transition-colors
+                     !border-0 !ring-0 !shadow-none !outline-none
+                     focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                     focus-visible:!ring-0"
             >
-              <!-- LinkedIn SVG -->
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"></svg>
-            </a>
-        
-            <a
-              class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
-              href="https://wa.me/31648777565"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat met Sandstone via WhatsApp"
+              <option value="nl">NL</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+      
+            <span
+              class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40"
             >
-              <!-- WhatsApp SVG -->
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"></svg>
-            </a>
+              expand_more
+            </span>
           </div>
         </div>
+      
+        <!-- Policy links -->
+        <div class="flex flex-wrap justify-center gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
+          <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">
+            Privacy Policy
+          </a>
+          <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/terms-of-service">
+            Terms of Service
+          </a>
+          <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/disclaimer">
+            Disclaimer
+          </a>
+        </div>
+      
+        <!-- Social icons -->
+        <div class="flex justify-center items-center gap-6">
+          <a
+            class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
+            href="https://www.linkedin.com/company/101424846/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Sandstone op LinkedIn"
+          >
+            <!-- LinkedIn SVG -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"></svg>
+          </a>
+      
+          <a
+            class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
+            href="https://wa.me/31648777565"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat met Sandstone via WhatsApp"
+          >
+            <!-- WhatsApp SVG -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"></svg>
+          </a>
+        </div>
+      </div>
 
         <div class="mt-8 pt-8 border-t border-[var(--deep-navy)]/5 text-center">
           <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
