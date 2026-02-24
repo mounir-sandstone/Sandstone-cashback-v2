@@ -1299,12 +1299,11 @@
           </div>
         </div>
       </section>
-    </main>
-
+    </main>     
+    
     <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
-            <div class="flex flex-col items-center text-center gap-8">
-
-            <!-- Logo + Language -->
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Logo + Language -->
             <div class="flex items-center justify-center gap-4">
               <img
                 src="assets/img/sandstone-logo.png"
@@ -1335,51 +1334,44 @@
                 </span>
               </div>
             </div>
-          
-            <!-- Policy links -->
-            <div class="flex flex-wrap justify-center gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
-              <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">
-                Privacy Policy
-              </a>
-              <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/terms-of-service">
-                Terms of Service
-              </a>
-              <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/disclaimer">
-                Disclaimer
-              </a>
-            </div>
-          
-            <!-- Social icons -->
-            <div class="flex items-center justify-center gap-4">
-              <a
-                class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
-                href="https://www.linkedin.com/company/101424846/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Sandstone op LinkedIn"
-              >
-                <!-- LinkedIn SVG -->
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5z"/>
-                </svg>
-              </a>
-          
-              <a
-                class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
-                href="https://wa.me/31648777565"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Chat met Sandstone via WhatsApp"
-              >
-                <!-- WhatsApp SVG -->
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.94.56 3.82 1.63 5.44L2 22l4.79-1.76a9.85 9.85 0 0 0 5.25 1.52h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/>
-                </svg>
-              </a>
-            </div>
-          
-          </div>     
-      
+
+          <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">Privacy Policy</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/terms-of-service">Terms of Service</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/disclaimer">Disclaimer</a>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a
+              class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
+              href="https://www.linkedin.com/company/101424846/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sandstone op LinkedIn"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path>
+              </svg>
+            </a>
+
+            <a
+              class="text-[var(--deep-navy)]/40 hover:text-[var(--deep-navy)] transition-colors p-2"
+              href="https://wa.me/31648777565"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat met Sandstone via WhatsApp"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.94.56 3.82 1.63 5.44L2 22l4.79-1.76a9.85 9.85 0 0 0 5.25 1.52h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 17.82c-1.6 0-3.17-.43-4.54-1.25l-.33-.2-2.84 1.04.96-2.77-.21-.35a7.86 7.86 0 0 1-1.21-4.38c0-4.33 3.52-7.85 7.86-7.85 4.33 0 7.85 3.52 7.85 7.85s-3.52 7.91-7.85 7.91zm4.31-5.89c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.38-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
         <div class="mt-8 pt-8 border-t border-[var(--deep-navy)]/5 text-center">
           <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
             © 2026 Sandstone. All Rights Reserved. Sandstone Project Management Services L.L.C. (License NO #1275831) trading as 'Sandstone' | TRN: 104337349500003
@@ -1387,7 +1379,7 @@
         </div>
       </div>
     </footer>
-
+    
     <script>
       (function () {
         function getLangFromPath() {
