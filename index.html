@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-  <script>
-    (function() {
-      var script = document.createElement('script');
-      script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1";
-      script.setAttribute("qooqie-callback-widget", "");
-      script.id = "6985a9bbfbd9c2002e966a05";
-      document.head.appendChild(script);
-    })();
-  </script>
-    
+    <script>
+      (function () {
+        var script = document.createElement("script");
+        script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1";
+        script.setAttribute("qooqie-callback-widget", "");
+        script.id = "6985a9bbfbd9c2002e966a05";
+        document.head.appendChild(script);
+      })();
+    </script>
+
     <!-- Google tag (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43LV9GYEB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-S43LV9GYEB', {
-        anonymize_ip: true
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S43LV9GYEB", {
+        anonymize_ip: true,
       });
     </script>
+
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -31,7 +34,12 @@
       content="Ontvang tot 5% cashback op je Google Ads spend. Maandelijkse uitbetaling op je bankrekening, zonder je strategie te wijzigen."
     />
     <meta name="robots" content="index,follow" />
+
     <link rel="canonical" href="https://cashback.sandstone.nl/" />
+    <link rel="alternate" hreflang="nl" href="https://cashback.sandstone.nl/" />
+    <link rel="alternate" hreflang="en" href="https://cashback.sandstone.nl/en/" />
+    <link rel="alternate" hreflang="fr" href="https://cashback.sandstone.nl/fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://cashback.sandstone.nl/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sandstone" />
@@ -41,10 +49,8 @@
       content="Ontvang tot 5% cashback op je Google Ads spend. Maandelijkse uitbetaling op je bankrekening, zonder je strategie te wijzigen."
     />
     <meta property="og:url" content="https://cashback.sandstone.nl/" />
-    <meta
-      property="og:image"
-      content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png"
-    />
+    <meta property="og:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
+    <meta property="og:locale" content="nl_NL" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tot 5% Cashback op je Google Ads" />
@@ -52,10 +58,7 @@
       name="twitter:description"
       content="Ontvang tot 5% cashback op je Google Ads spend. Maandelijkse uitbetaling op je bankrekening, zonder je strategie te wijzigen."
     />
-    <meta
-      name="twitter:image"
-      content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png"
-    />
+    <meta name="twitter:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
 
     <link rel="icon" type="image/png" href="assets/img/sandstone-favicon.png" />
     <link rel="apple-touch-icon" href="assets/img/sandstone-favicon.png" />
@@ -63,7 +66,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
     <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap"
       rel="stylesheet"
@@ -83,15 +86,15 @@
             "name": "Is dit toegestaan door Google?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sandstone opereert als geautoriseerde Google Partner en maakt gebruik van beschikbare partnerprogramma's die Google aanbiedt."
+              "text": "Ja, wij werken volledig volgens de officiële Google Ads API richtlijnen en erkende partnerprogramma’s. Sandstone zelf is een erkende Google Ads partner."
             }
           },
           {
             "@type": "Question",
-            "name": "Hoe verdienen jullie hier geld mee?",
+            "name": "Hoe ontvang ik cashback op mijn Google Ads spend?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sandstone ontvangt een commissie van Google voor de volumes die wij beheren. Wij houden een kleine administratieve vergoeding in en de rest betalen we netto uit."
+              "text": "Na koppeling en validatie loopt de betaling van Google Ads via ons MCC betaalprofiel. Op basis van de geverifieerde spend ontvang je maandelijks cashback in euro’s."
             }
           },
           {
@@ -99,7 +102,7 @@
             "name": "Behouden wij controle over ons account?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ja. Je behoudt volledige eigendom en controle over je Google Ads accounts, strategieën en budgetten."
+              "text": "Ja. Je behoudt volledige eigendom en controle over je Google Ads account, strategie en budget."
             }
           }
         ]
@@ -136,11 +139,7 @@
       }
 
       .hero-gradient {
-        background: radial-gradient(
-          circle at center,
-          rgba(0, 85, 255, 0.03) 0%,
-          transparent 70%
-        );
+        background: radial-gradient(circle at center, rgba(0, 85, 255, 0.03) 0%, transparent 70%);
       }
 
       .card-hover {
@@ -339,12 +338,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(
-          120deg,
-          transparent 30%,
-          rgba(255, 255, 255, 0.35) 50%,
-          transparent 70%
-        );
+        background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%);
         transform: translateX(-120%);
         transition: transform 0.6s ease;
       }
@@ -353,53 +347,54 @@
         transform: translateX(120%);
       }
 
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background-image: none;
-    }
-      /* Verberg native details/summary marker */
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: none;
+      }
+
       summary {
         list-style: none;
       }
-      
+
       summary::-webkit-details-marker {
         display: none;
       }
-      
+
       summary::marker {
         display: none;
       }
+
       .step {
         transition: opacity 240ms ease, transform 240ms ease;
         opacity: 0.72;
       }
-      
+
       .step.is-active {
         opacity: 1;
         transform: translateY(-2px);
       }
-      
+
       .step .step-badge {
         transition: background 240ms ease, border-color 240ms ease, box-shadow 240ms ease, color 240ms ease;
       }
-      
+
       .step.is-active .step-badge {
         background: var(--sandstone-blue);
         border-color: var(--sandstone-blue);
         color: #fff;
         box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25), 0 10px 30px rgba(0, 102, 255, 0.22);
       }
-      
+
       .step .step-title {
         transition: color 240ms ease;
       }
-      
+
       .step.is-active .step-title {
         color: #fff;
       }
-      
+
       .nav-link {
         position: relative;
         display: inline-block;
@@ -408,7 +403,7 @@
         transition: color 200ms ease, transform 200ms ease;
         transform-origin: left center;
       }
-      
+
       .nav-link:hover {
         color: rgba(0, 24, 40, 1);
         transform: scale(1.04);
@@ -417,7 +412,7 @@
         text-decoration-thickness: 2px;
         text-underline-offset: 8px;
       }
-      
+
       .nav-link:focus-visible {
         outline: 2px solid rgba(197, 163, 103, 0.5);
         outline-offset: 3px;
@@ -448,6 +443,26 @@
         </div>
 
         <div class="flex items-center gap-4 lg:gap-6">
+          <!-- Language switcher desktop -->
+          <div class="hidden lg:flex items-center">
+            <label for="lang-switcher" class="sr-only">Language</label>
+            <div class="relative">
+              <select
+                id="lang-switcher"
+                class="bg-transparent border border-[var(--deep-navy)]/10 rounded-full px-4 py-2 pr-10 text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a367]/40 min-h-[44px] cursor-pointer"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+              <span
+                class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none opacity-50"
+                aria-hidden="true"
+                >expand_more</span
+              >
+            </div>
+          </div>
+
           <a
             class="hidden xl:flex items-center hover:opacity-85 transition-opacity"
             href="https://www.google.com/partners/agency?id=7068026748"
@@ -466,22 +481,7 @@
 
           <a
             href="#register"
-            class="
-              cta-shine
-              hidden sm:inline-flex items-center
-              bg-[var(--gold-accent)]
-              text-white
-              px-7 py-3
-              rounded-full
-              text-sm font-extrabold
-              transition-all duration-200 ease-out
-              hover:bg-[#b08f4e]
-              hover:-translate-y-[1px]
-              hover:shadow-lg hover:shadow-[#c5a367]/30
-              active:translate-y-0
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a367]/50
-              min-h-[44px]
-            "
+            class="cta-shine hidden sm:inline-flex items-center bg-[var(--gold-accent)] text-white px-7 py-3 rounded-full text-sm font-extrabold transition-all duration-200 ease-out hover:bg-[#b08f4e] hover:-translate-y-[1px] hover:shadow-lg hover:shadow-[#c5a367]/30 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a367]/50 min-h-[44px]"
           >
             Ontvang mijn cashback
           </a>
@@ -505,12 +505,7 @@
       id="mobile-menu-overlay"
       aria-hidden="true"
     >
-      <button
-        type="button"
-        class="absolute top-6 right-6 p-2 cursor-pointer z-[70]"
-        id="mobile-menu-close"
-        aria-label="Sluit menu"
-      >
+      <button type="button" class="absolute top-6 right-6 p-2 cursor-pointer z-[70]" id="mobile-menu-close" aria-label="Sluit menu">
         <span class="material-symbols-outlined text-3xl" aria-hidden="true">close</span>
       </button>
 
@@ -522,6 +517,24 @@
           <a class="text-2xl font-bold py-2" href="#stappen" data-mobile-link>Hoe het werkt</a>
           <a class="text-2xl font-bold py-2" href="#faq" data-mobile-link>FAQ</a>
         </nav>
+
+        <!-- Language switcher mobile -->
+        <div class="w-full max-w-sm mt-2">
+          <label for="lang-switcher-mobile" class="sr-only">Language</label>
+          <div class="relative">
+            <select
+              id="lang-switcher-mobile"
+              class="w-full bg-white/70 border border-[var(--deep-navy)]/10 rounded-full px-5 py-4 pr-12 font-bold text-[var(--deep-navy)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a367]/40 min-h-[54px] cursor-pointer"
+            >
+              <option value="nl">NL</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-50" aria-hidden="true"
+              >expand_more</span
+            >
+          </div>
+        </div>
 
         <div class="mt-6 w-full max-w-sm">
           <a
@@ -557,9 +570,8 @@
       <section class="relative pt-32 lg:pt-48 pb-24 overflow-hidden hero-gradient">
         <div class="max-w-7xl mx-auto px-6">
           <div class="flex flex-col items-center text-center">
-            <p class="text-[10px] font-extrabold text-[var(--deep-navy)] uppercase tracking-[0.4em] mb-4">
-              EXCLUSIEF VOOR GOOGLE ADS ADVERTEERDERS
-            </p>
+            <p class="text-[10px] font-extrabold text-[var(--deep-navy)] uppercase tracking-[0.4em] mb-4">EXCLUSIEF VOOR GOOGLE ADS ADVERTEERDERS</p>
+
             <h1 class="font-display font-extrabold tracking-tight leading-[1.05] mb-8 text-[var(--deep-navy)]">
               Tot <span class="text-[var(--gold-accent)]">5%</span> cashback <br class="hidden md:block" />
               op jouw advertentiekosten.
@@ -593,9 +605,7 @@
                     <div class="h-2.5 w-2.5 rounded-full bg-[#FFBD2E]"></div>
                     <div class="h-2.5 w-2.5 rounded-full bg-[#28C840]"></div>
                   </div>
-                  <div class="text-[10px] text-white/40 font-mono tracking-widest uppercase font-bold">
-                    SANDSTONE ANALYTICS V.1
-                  </div>
+                  <div class="text-[10px] text-white/40 font-mono tracking-widest uppercase font-bold">SANDSTONE ANALYTICS V.1</div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -620,9 +630,7 @@
                   <div class="w-full bg-white/15 rounded-md h-[50%]"></div>
                   <div class="w-full bg-white/20 rounded-md h-[65%]"></div>
                   <div class="w-full bg-[var(--mineral-sand)] rounded-md h-[85%] relative group flex items-center justify-center">
-                    <div class="absolute -top-10 bg-white text-[var(--deep-navy)] text-[10px] py-1 px-3 rounded font-bold whitespace-nowrap">
-                      MAX BENEFIT
-                    </div>
+                    <div class="absolute -top-10 bg-white text-[var(--deep-navy)] text-[10px] py-1 px-3 rounded font-bold whitespace-nowrap">MAX BENEFIT</div>
                   </div>
                 </div>
               </div>
@@ -695,101 +703,98 @@
           </div>
         </div>
       </section>
-<section class="py-24 bg-white/50 border-y border-[var(--deep-navy)]/5 reveal" id="voordelen" data-reveal>
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-      <div class="order-2 lg:order-1">
-        <h2 class="font-display font-extrabold mb-8 leading-tight text-[var(--deep-navy)]">
-          Maximaliseer je rendement zonder extra werk.
-        </h2>
+      <section class="py-24 bg-white/50 border-y border-[var(--deep-navy)]/5 reveal" id="voordelen" data-reveal>
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div class="order-2 lg:order-1">
+              <h2 class="font-display font-extrabold mb-8 leading-tight text-[var(--deep-navy)]">Maximaliseer je rendement zonder extra werk.</h2>
 
-        <div class="space-y-8 lg:space-y-10 mb-12">
-          <div class="flex gap-6">
-            <div class="shrink-0 w-12 h-12 rounded-full border border-[var(--deep-navy)]/10 flex items-center justify-center bg-white shadow-sm">
-              <span class="material-symbols-outlined text-[var(--deep-navy)] text-2xl" aria-hidden="true">auto_graph</span>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">Schaalbare groei</h4>
-              <p class="text-[var(--deep-navy)]/60 text-base leading-relaxed">
-                Door het cashback programma krijg je meer ruimte om te investeren in groei. De cashback ontvang je elke maand in harde euro’s.
-              </p>
-            </div>
-          </div>
+              <div class="space-y-8 lg:space-y-10 mb-12">
+                <div class="flex gap-6">
+                  <div class="shrink-0 w-12 h-12 rounded-full border border-[var(--deep-navy)]/10 flex items-center justify-center bg-white shadow-sm">
+                    <span class="material-symbols-outlined text-[var(--deep-navy)] text-2xl" aria-hidden="true">auto_graph</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Schaalbare groei</h4>
+                    <p class="text-[var(--deep-navy)]/60 text-base leading-relaxed">
+                      Door het cashback programma krijg je meer ruimte om te investeren in groei. De cashback ontvang je elke maand in harde euro’s.
+                    </p>
+                  </div>
+                </div>
 
-          <div class="flex gap-6">
-            <div class="shrink-0 w-12 h-12 rounded-full border border-[var(--deep-navy)]/10 flex items-center justify-center bg-white shadow-sm">
-              <span class="material-symbols-outlined text-[var(--deep-navy)] text-2xl" aria-hidden="true">security</span>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">Veilig en compliant</h4>
-              <p class="text-[var(--deep-navy)]/60 text-base leading-relaxed">
-                We beheren geen campagnes en koppelen enkel het Google Ads account aan onze betaalprofiel.
-              </p>
-            </div>
-          </div>
+                <div class="flex gap-6">
+                  <div class="shrink-0 w-12 h-12 rounded-full border border-[var(--deep-navy)]/10 flex items-center justify-center bg-white shadow-sm">
+                    <span class="material-symbols-outlined text-[var(--deep-navy)] text-2xl" aria-hidden="true">security</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Veilig en compliant</h4>
+                    <p class="text-[var(--deep-navy)]/60 text-base leading-relaxed">
+                      We beheren geen campagnes en koppelen enkel het Google Ads account aan ons betaalprofiel.
+                    </p>
+                  </div>
+                </div>
 
-          <div class="flex gap-6">
-            <div class="shrink-0 w-12 h-12 rounded-full border border-[var(--deep-navy)]/10 flex items-center justify-center bg-white shadow-sm">
-              <span class="material-symbols-outlined text-[var(--deep-navy)] text-2xl" aria-hidden="true">speed</span>
+                <div class="flex gap-6">
+                  <div class="shrink-0 w-12 h-12 rounded-full border border-[var(--deep-navy)]/10 flex items-center justify-center bg-white shadow-sm">
+                    <span class="material-symbols-outlined text-[var(--deep-navy)] text-2xl" aria-hidden="true">speed</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Snelle implementatie</h4>
+                    <p class="text-[var(--deep-navy)]/60 text-base leading-relaxed">
+                      Binnen 15 minuten is de koppeling gemaakt en nadat jouw account is geverifieerd start het opbouwen van je eerste cashback.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-4 mt-8 sm:flex-row">
+                <a
+                  class="w-full sm:flex-1 text-center bg-[var(--deep-navy)] text-[var(--mineral-sand)] px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform min-h-[54px] inline-flex items-center justify-center"
+                  href="#register"
+                >
+                  Ontvang mijn cashback
+                </a>
+
+                <a
+                  class="w-full sm:flex-1 px-10 py-4 rounded-full border border-[var(--deep-navy)]/10 font-bold text-lg hover:bg-white/50 transition-colors min-h-[54px] inline-flex items-center justify-center"
+                  href="https://calendly.com/google-sandstone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Plan een demo
+                </a>
+              </div>
             </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">Snelle implementatie</h4>
-              <p class="text-[var(--deep-navy)]/60 text-base leading-relaxed">
-                Binnen 15 minuten is de koppeling gemaakt en nadat jouw account is geverifieerd start het opbouwen van je eerste cashback.
-              </p>
+
+            <div class="relative order-1 lg:order-2">
+              <div class="aspect-square bg-[var(--mineral-sand)] rounded-3xl border border-[var(--deep-navy)]/10 p-6 md:p-10 flex flex-col justify-center shadow-inner">
+                <div class="space-y-6">
+                  <div class="bg-white p-6 rounded-2xl border border-[var(--deep-navy)]/5 flex justify-between items-center shadow-lg shadow-[var(--deep-navy)]/5">
+                    <span class="text-base font-bold text-[var(--deep-navy)]">Maand 1</span>
+                    <span class="font-display font-extrabold text-[var(--sandstone-blue)]">+ €14.240</span>
+                  </div>
+
+                  <div class="bg-white p-6 rounded-2xl border border-[var(--deep-navy)]/5 flex justify-between items-center opacity-70 shadow-md">
+                    <span class="text-base font-bold text-[var(--deep-navy)]">Maand 2</span>
+                    <span class="font-display font-extrabold text-[var(--sandstone-blue)]">+ €15.450</span>
+                  </div>
+
+                  <div class="bg-white p-6 rounded-2xl border border-[var(--deep-navy)]/5 flex justify-between items-center opacity-40">
+                    <span class="text-base font-bold text-[var(--deep-navy)]">Maand 3</span>
+                    <span class="font-display font-extrabold text-[var(--sandstone-blue)]">+ €17.890</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute -bottom-6 -right-2 md:-bottom-8 md:-right-8 bg-[var(--deep-navy)] text-[var(--mineral-sand)] p-6 md:p-8 rounded-2xl shadow-2xl">
+                <p class="text-3xl md:text-4xl font-display font-black leading-none mb-1">€47.6k</p>
+                <p class="text-[10px] font-extrabold uppercase tracking-widest opacity-60">Bespaard in Q1 2026</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="flex flex-col gap-4 mt-8 sm:flex-row">
-          <a
-            class="w-full sm:flex-1 text-center bg-[var(--deep-navy)] text-[var(--mineral-sand)] px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform min-h-[54px] inline-flex items-center justify-center"
-            href="#register"
-          >
-            Ontvang mijn cashback
-          </a>
-
-          <a
-            class="w-full sm:flex-1 px-10 py-4 rounded-full border border-[var(--deep-navy)]/10 font-bold text-lg hover:bg-white/50 transition-colors min-h-[54px] inline-flex items-center justify-center"
-            href="https://calendly.com/google-sandstone"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Plan een demo
-          </a>
-        </div>
-      </div>
-
-      <div class="relative order-1 lg:order-2">
-        <div class="aspect-square bg-[var(--mineral-sand)] rounded-3xl border border-[var(--deep-navy)]/10 p-6 md:p-10 flex flex-col justify-center shadow-inner">
-          <div class="space-y-6">
-            <div class="bg-white p-6 rounded-2xl border border-[var(--deep-navy)]/5 flex justify-between items-center shadow-lg shadow-[var(--deep-navy)]/5">
-              <span class="text-base font-bold text-[var(--deep-navy)]">Maand 1</span>
-              <span class="font-display font-extrabold text-[var(--sandstone-blue)]">+ €14.240</span>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-[var(--deep-navy)]/5 flex justify-between items-center opacity-70 shadow-md">
-              <span class="text-base font-bold text-[var(--deep-navy)]">Maand 2</span>
-              <span class="font-display font-extrabold text-[var(--sandstone-blue)]">+ €15.450</span>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-[var(--deep-navy)]/5 flex justify-between items-center opacity-40">
-              <span class="text-base font-bold text-[var(--deep-navy)]">Maand 3</span>
-              <span class="font-display font-extrabold text-[var(--sandstone-blue)]">+ €17.890</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="absolute -bottom-6 -right-2 md:-bottom-8 md:-right-8 bg-[var(--deep-navy)] text-[var(--mineral-sand)] p-6 md:p-8 rounded-2xl shadow-2xl">
-          <p class="text-3xl md:text-4xl font-display font-black leading-none mb-1">€47.6k</p>
-          <p class="text-[10px] font-extrabold uppercase tracking-widest opacity-60">Bespaard in Q1 2026</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       <section class="py-24 lg:py-32 max-w-7xl mx-auto px-6 reveal" id="verdienmodel" data-reveal>
         <div class="text-center mb-16">
@@ -861,7 +866,7 @@
 
         <div class="mt-8 flex justify-center">
           <div class="bg-[var(--deep-navy)] text-white px-6 md:px-8 py-4 rounded-3xl md:rounded-full flex items-center gap-3 shadow-xl text-center">
-            <span class="material-symbols-outlined text-[var(--gold-accent)] fill-1" aria-hidden="true">stars</span>
+            <span class="material-symbols-outlined text-[var(--gold-accent)] [font-variation-settings:'FILL'_1,'wght'_600,'GRAD'_0,'opsz'_24]" aria-hidden="true">stars</span>
             <span class="text-sm font-bold tracking-tight">
               Bij €10.000+ dagbudget ontvang je tot <span class="text-[var(--gold-accent)]">€144.000+</span> cashback per jaar
             </span>
@@ -912,7 +917,7 @@
             </p>
             <div class="flex items-center justify-between mt-auto pt-6 border-t border-black/5">
               <div class="flex flex-col">
-                <span class="text-[9px] font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/50">CEO, E-COMMERCE</span>
+                <span class="text-[9px] font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/50">CEO, E COMMERCE</span>
               </div>
               <div class="bg-[#E7F9ED] px-3 py-1 rounded-full flex items-center justify-center">
                 <span class="text-[9px] font-black text-[#28C840] leading-none">Bespaard €12.000+</span>
@@ -944,63 +949,63 @@
       </section>
 
       <section class="py-24 lg:py-32 bg-[var(--deep-navy)] text-[var(--mineral-sand)] reveal" id="stappen" data-reveal>
-  <div class="max-w-4xl mx-auto px-6">
-    <div class="text-center mb-20">
-      <h2 class="font-display font-extrabold mb-6">In 4 stappen live</h2>
-      <p class="text-[var(--mineral-sand)]/60 text-lg">Binnen 15 minuten is je cashback structuur actief en volledig ingericht.</p>
-    </div>
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="text-center mb-20">
+            <h2 class="font-display font-extrabold mb-6">In 4 stappen live</h2>
+            <p class="text-[var(--mineral-sand)]/60 text-lg">Binnen 15 minuten is je cashback structuur actief en volledig ingericht.</p>
+          </div>
 
-    <div class="space-y-12 md:space-y-16">
-      <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
-        <div class="step-badge w-16 h-16 rounded-2xl bg-[var(--sandstone-blue)] text-white flex items-center justify-center font-display font-black text-2xl shrink-0 shadow-lg shadow-[var(--sandstone-blue)]/20">
-          1
-        </div>
-        <div>
-          <h3 class="step-title text-2xl font-bold mb-4">Koppel je Google Ads account</h3>
-          <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
-            Je deelt het klant ID van je Google Ads account. Er worden geen campagnes, budgetten of instellingen aangepast. Wij koppelen uitsluitend via de officiële Google structuur.
-          </p>
-        </div>
-      </div>
+          <div class="space-y-12 md:space-y-16">
+            <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
+              <div class="step-badge w-16 h-16 rounded-2xl bg-[var(--sandstone-blue)] text-white flex items-center justify-center font-display font-black text-2xl shrink-0 shadow-lg shadow-[var(--sandstone-blue)]/20">
+                1
+              </div>
+              <div>
+                <h3 class="step-title text-2xl font-bold mb-4">Koppel je Google Ads account</h3>
+                <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
+                  Je deelt het klant ID van je Google Ads account. Er worden geen campagnes, budgetten of instellingen aangepast. Wij koppelen uitsluitend via de officiële Google structuur.
+                </p>
+              </div>
+            </div>
 
-      <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
-        <div class="step-badge w-16 h-16 rounded-2xl border-2 border-[var(--mineral-sand)]/20 text-[var(--mineral-sand)] flex items-center justify-center font-display font-black text-2xl shrink-0">
-          2
-        </div>
-        <div>
-          <h3 class="step-title text-2xl font-bold mb-4">Accountvalidatie</h3>
-          <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
-            Wij sturen je een invite die je accepteert in Google Ads. Vervolgens controleren we of het account voldoet aan de voorwaarden van het cashback programma. Deze check is eenmalig en heeft geen impact op performance of lopende campagnes.
-          </p>
-        </div>
-      </div>
+            <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
+              <div class="step-badge w-16 h-16 rounded-2xl border-2 border-[var(--mineral-sand)]/20 text-[var(--mineral-sand)] flex items-center justify-center font-display font-black text-2xl shrink-0">
+                2
+              </div>
+              <div>
+                <h3 class="step-title text-2xl font-bold mb-4">Accountvalidatie</h3>
+                <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
+                  Wij sturen je een invite die je accepteert in Google Ads. Vervolgens controleren we of het account voldoet aan de voorwaarden van het cashback programma. Deze check is eenmalig en heeft geen impact op performance of lopende campagnes.
+                </p>
+              </div>
+            </div>
 
-      <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
-        <div class="step-badge w-16 h-16 rounded-2xl border-2 border-[var(--mineral-sand)]/20 text-[var(--mineral-sand)] flex items-center justify-center font-display font-black text-2xl shrink-0">
-          3
-        </div>
-        <div>
-          <h3 class="step-title text-2xl font-bold mb-4">Omzetting betaalprofiel</h3>
-          <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
-            Na validatie wordt het betaalprofiel van het account omgezet naar het betaalprofiel van onze MCC. De Google Ads kosten lopen vanaf dat moment via ons betaalprofiel. Dit is noodzakelijk om cashback te kunnen toepassen en blijft volledig transparant inzichtelijk.
-          </p>
-        </div>
-      </div>
+            <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
+              <div class="step-badge w-16 h-16 rounded-2xl border-2 border-[var(--mineral-sand)]/20 text-[var(--mineral-sand)] flex items-center justify-center font-display font-black text-2xl shrink-0">
+                3
+              </div>
+              <div>
+                <h3 class="step-title text-2xl font-bold mb-4">Omzetting betaalprofiel</h3>
+                <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
+                  Na validatie wordt het betaalprofiel van het account omgezet naar het betaalprofiel van onze MCC. De Google Ads kosten lopen vanaf dat moment via ons betaalprofiel. Dit is noodzakelijk om cashback te kunnen toepassen en blijft volledig transparant inzichtelijk.
+                </p>
+              </div>
+            </div>
 
-      <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
-        <div class="step-badge w-16 h-16 rounded-2xl border-2 border-[var(--mineral-sand)]/20 text-[var(--mineral-sand)] flex items-center justify-center font-display font-black text-2xl shrink-0">
-          4
+            <div class="step flex flex-col md:flex-row gap-8 md:gap-10 items-start" data-step>
+              <div class="step-badge w-16 h-16 rounded-2xl border-2 border-[var(--mineral-sand)]/20 text-[var(--mineral-sand)] flex items-center justify-center font-display font-black text-2xl shrink-0">
+                4
+              </div>
+              <div>
+                <h3 class="step-title text-2xl font-bold mb-4">Maandelijkse uitbetaling</h3>
+                <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
+                  Elke eerste van de maand wordt de opgebouwde cashback automatisch uitbetaald in euro’s. Je ziet vooraf exact hoeveel je ontvangt via je dashboard, gebaseerd op geverifieerde Google Ads spend. Geen handmatig werk, geen verrassingen.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3 class="step-title text-2xl font-bold mb-4">Maandelijkse uitbetaling</h3>
-          <p class="text-[var(--mineral-sand)]/60 text-lg leading-relaxed">
-            Elke eerste van de maand wordt de opgebouwde cashback automatisch uitbetaald in euro’s. Je ziet vooraf exact hoeveel je ontvangt via je dashboard, gebaseerd op geverifieerde Google Ads spend. Geen handmatig werk, geen verrassingen.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <section class="py-24 lg:py-32 max-w-4xl mx-auto px-6 reveal" id="faq" data-reveal>
         <h2 class="font-display font-extrabold mb-16 text-center text-[var(--deep-navy)]">Veelgestelde vragen</h2>
@@ -1110,27 +1115,40 @@
             </p>
           </details>
         </div>
+      </section>
 
-        </section>
-        <section class="py-24 px-6">
+      <section class="py-24 px-6">
         <div class="max-w-6xl mx-auto bg-[var(--deep-navy)] text-[var(--mineral-sand)] rounded-[2rem] md:rounded-[3rem] p-8 md:p-24 text-center relative overflow-hidden shadow-2xl">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,85,255,0.15),transparent)]"></div>
-        <div class="relative z-10">
-        <h2 class="text-3xl sm:text-4xl md:text-7xl font-display font-extrabold mb-6 tracking-tight leading-tight max-w-[18ch] md:max-w-none mx-auto">Hoeveel rendement mis je op je advertentiebudget?</h2>
-        <p class="text-xl md:text-2xl mb-14 text-[var(--mineral-sand)]/70 max-w-2xl mx-auto font-medium">Met een slimme cashback-structuur verhoog je je marge zonder je strategie te wijzigen.</p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-        <a class="w-full sm:w-auto bg-[var(--mineral-sand)] text-[var(--deep-navy)] px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-xl min-h-[60px] flex items-center justify-center" href="#register">
-                            Ontdek je voordeel
-                        </a>
-        <a class="w-full sm:w-auto border-2 border-[var(--mineral-sand)]/20 px-12 py-5 rounded-full font-black text-xl hover:bg-white/10 transition-colors min-h-[60px] flex items-center justify-center" href="https://calendly.com/google-sandstone" target="_blank">
-                            Plan een demo
-                        </a>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,85,255,0.15),transparent)]"></div>
+          <div class="relative z-10">
+            <h2
+              class="text-3xl sm:text-4xl md:text-7xl font-display font-extrabold mb-6 tracking-tight leading-tight max-w-[18ch] md:max-w-none mx-auto"
+            >
+              Hoeveel rendement mis je op je advertentiebudget?
+            </h2>
+            <p class="text-xl md:text-2xl mb-14 text-[var(--mineral-sand)]/70 max-w-2xl mx-auto font-medium">
+              Met een slimme cashback structuur verhoog je je marge zonder je strategie te wijzigen.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                class="w-full sm:w-auto bg-[var(--mineral-sand)] text-[var(--deep-navy)] px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-xl min-h-[60px] flex items-center justify-center"
+                href="#register"
+              >
+                Ontdek je voordeel
+              </a>
+              <a
+                class="w-full sm:w-auto border-2 border-[var(--mineral-sand)]/20 px-12 py-5 rounded-full font-black text-xl hover:bg-white/10 transition-colors min-h-[60px] flex items-center justify-center"
+                href="https://calendly.com/google-sandstone"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Plan een demo
+              </a>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        </section>
-      
-      
+      </section>
+
       <section class="py-24 px-6 scroll-mt-24 reveal" id="register" data-reveal>
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-16">
@@ -1138,7 +1156,6 @@
             <p class="text-[var(--deep-navy)]/60 font-medium">Vul je gegevens in en we nemen binnen 24 uur contact op.</p>
           </div>
 
-          <!-- Form wrapper: we togglen tussen form en bedankt state -->
           <div class="bg-white border border-[var(--deep-navy)]/10 p-6 md:p-12 rounded-[2rem] shadow-sm">
             <form id="cashback-form" class="space-y-6" novalidate>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1187,10 +1204,7 @@
                       <option value="10000-25000">€10.000 – €25.000</option>
                       <option value="25000+">€25.000+</option>
                     </select>
-                    <span
-                      class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-40"
-                      aria-hidden="true"
-                    >
+                    <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none opacity-40" aria-hidden="true">
                       expand_more
                     </span>
                   </div>
@@ -1211,7 +1225,6 @@
                 </div>
               </div>
 
-              <!-- Inline error -->
               <div id="form-error" class="hidden rounded-2xl border border-[var(--deep-navy)]/10 bg-[var(--mineral-sand)] px-5 py-4">
                 <p class="text-sm font-bold text-[var(--deep-navy)]">Er ging iets mis</p>
                 <p class="text-sm text-[var(--deep-navy)]/60 mt-1">
@@ -1227,121 +1240,99 @@
                 >
                   Ontvang mijn cashback
                 </button>
+
                 <p class="text-center text-[var(--deep-navy)]/40 text-xs mt-6 font-medium">
                   Door te versturen ga je akkoord met onze
-                  <a
-                    href="/privacy-policy"
-                    class="underline underline-offset-2 hover:text-[var(--deep-navy)] transition-colors"
-                  >
+                  <a href="/privacy-policy" class="underline underline-offset-2 hover:text-[var(--deep-navy)] transition-colors">
                     privacyvoorwaarden
                   </a>.
                 </p>
               </div>
             </form>
 
-     <!-- Bedankt state -->
-      <div id="thank-you" class="hidden">
-        <!-- Header -->
-        <div class="mb-8">
-          <p class="text-xs font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/40 mb-2">
-            Aanmelding ontvangen
-          </p>
-        
-          <h3 class="text-2xl md:text-3xl font-display font-extrabold text-[var(--deep-navy)] leading-tight">
-            Bedankt voor je aanvraag!
-          </h3>
-        
-          <p class="mt-3 text-[var(--deep-navy)]/60 font-medium max-w-xl">
-            Je ontvangt een e-mail met de vervolgstappen, zodra we je aanvraag hebben geverifieerd.
-          </p>
-        </div>
-      
-        <!-- Content grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Steps -->
-          <div class="p-6 rounded-2xl bg-[var(--mineral-sand)] border border-[var(--deep-navy)]/10">
-            <p class="text-xs font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/40 mb-4">
-              Wat gebeurt er nu:
-            </p>
-      
-            <ul class="space-y-4 text-[var(--deep-navy)]/70 font-medium">
-              <li class="flex gap-3">
-                <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">check_circle</span>
-                <span>We controleren of je account voldoet aan de voorwaarden voor cashback.</span>
-              </li>
-      
-              <li class="flex gap-3">
-                <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">mail</span>
-                <span>Binnen 24 uur ontvang je instructies om je Google Ads account veilig te koppelen.</span>
-              </li>
-      
-              <li class="flex gap-3">
-                <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">sync</span>
-                <span>Na koppeling activeren we de cashbackstructuur voor je account.</span>
-              </li>
-      
-              <li class="flex gap-3">
-                <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">payments</span>
-                <span>Je cashback wordt automatisch opgebouwd en maandelijks uitbetaald in euro’s.</span>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- Direct contact -->
-          <div class="p-6 rounded-2xl bg-white border border-[var(--deep-navy)]/10">
-            <p class="text-xs font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/40 mb-4">
-              Direct contact
-            </p>
-      
-            <p class="text-[var(--deep-navy)]/70 font-medium leading-relaxed">
-              Wil je sneller schakelen? Stuur ons een bericht via WhatsApp of LinkedIn.
-            </p>
-      
-            <div class="flex flex-col sm:flex-row gap-3 mt-6">
-              <a
-                href="https://wa.me/31648777565"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[var(--deep-navy)] text-[var(--mineral-sand)] font-bold min-h-[48px] hover:scale-[1.02] transition-transform"
-                aria-label="Chat met Sandstone via WhatsApp"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 32 32"
-                  fill="currentColor"
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                >
-                  <path d="M19.11 17.2c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.2-.24-.57-.48-.5-.66-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.52s1.08 2.93 1.23 3.13c.15.2 2.13 3.26 5.17 4.57.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
-                  <path d="M16.04 2C8.3 2 2 8.29 2 16.04c0 2.75.78 5.33 2.25 7.56L2 30l6.56-2.14a13.9 13.9 0 007.48 2.19h.01C23.78 30.05 30 23.75 30 16c0-7.71-6.26-14-13.96-14zm0 25.5c-2.3 0-4.55-.62-6.5-1.8l-.47-.28-3.9 1.27 1.3-3.8-.3-.5a11.2 11.2 0 01-1.77-6.06c0-6.18 5.02-11.2 11.2-11.2S27.8 10.15 27.8 16.33c0 6.18-5.02 11.17-11.76 11.17z"/>
-                </svg>
-                WhatsApp
-              </a>
-              
-              <a
-                href="https://www.linkedin.com/company/101424846/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[var(--deep-navy)]/10 bg-[var(--mineral-sand)] text-[var(--deep-navy)] font-bold min-h-[48px] hover:bg-white transition-colors"
-                aria-label="Sandstone op LinkedIn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                >
-                  <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.65-1.86 3.4-1.86 3.63 0 4.3 2.39 4.3 5.5v6.25zM5.34 7.43c-1.14 0-2.06-.93-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.13-.92 2.06-2.06 2.06zM7.11 20.45H3.56V9h3.55v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.72C24 .77 23.21 0 22.23 0z"/>
-                </svg>
-                LinkedIn
-              </a>
+            <div id="thank-you" class="hidden">
+              <div class="mb-8">
+                <p class="text-xs font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/40 mb-2">Aanmelding ontvangen</p>
+
+                <h3 class="text-2xl md:text-3xl font-display font-extrabold text-[var(--deep-navy)] leading-tight">Bedankt voor je aanvraag!</h3>
+
+                <p class="mt-3 text-[var(--deep-navy)]/60 font-medium max-w-xl">
+                  Je ontvangt een e-mail met de vervolgstappen, zodra we je aanvraag hebben geverifieerd.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl bg-[var(--mineral-sand)] border border-[var(--deep-navy)]/10">
+                  <p class="text-xs font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/40 mb-4">Wat gebeurt er nu:</p>
+
+                  <ul class="space-y-4 text-[var(--deep-navy)]/70 font-medium">
+                    <li class="flex gap-3">
+                      <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">check_circle</span>
+                      <span>We controleren of je account voldoet aan de voorwaarden voor cashback.</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                      <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">mail</span>
+                      <span>Binnen 24 uur ontvang je instructies om je Google Ads account veilig te koppelen.</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                      <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">sync</span>
+                      <span>Na koppeling activeren we de cashbackstructuur voor je account.</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                      <span class="material-symbols-outlined text-[var(--gold-accent)] shrink-0" aria-hidden="true">payments</span>
+                      <span>Je cashback wordt automatisch opgebouwd en maandelijks uitbetaald in euro’s.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white border border-[var(--deep-navy)]/10">
+                  <p class="text-xs font-extrabold uppercase tracking-widest text-[var(--deep-navy)]/40 mb-4">Direct contact</p>
+
+                  <p class="text-[var(--deep-navy)]/70 font-medium leading-relaxed">
+                    Wil je sneller schakelen? Stuur ons een bericht via WhatsApp of LinkedIn.
+                  </p>
+
+                  <div class="flex flex-col sm:flex-row gap-3 mt-6">
+                    <a
+                      href="https://wa.me/31648777565"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[var(--deep-navy)] text-[var(--mineral-sand)] font-bold min-h-[48px] hover:scale-[1.02] transition-transform"
+                      aria-label="Chat met Sandstone via WhatsApp"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                        <path
+                          d="M19.11 17.2c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.2-.24-.57-.48-.5-.66-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.52s1.08 2.93 1.23 3.13c.15.2 2.13 3.26 5.17 4.57.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"
+                        />
+                        <path
+                          d="M16.04 2C8.3 2 2 8.29 2 16.04c0 2.75.78 5.33 2.25 7.56L2 30l6.56-2.14a13.9 13.9 0 007.48 2.19h.01C23.78 30.05 30 23.75 30 16c0-7.71-6.26-14-13.96-14zm0 25.5c-2.3 0-4.55-.62-6.5-1.8l-.47-.28-3.9 1.27 1.3-3.8-.3-.5a11.2 11.2 0 01-1.77-6.06c0-6.18 5.02-11.2 11.2-11.2S27.8 10.15 27.8 16.33c0 6.18-5.02 11.17-11.76 11.17z"
+                        />
+                      </svg>
+                      WhatsApp
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/101424846/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[var(--deep-navy)]/10 bg-[var(--mineral-sand)] text-[var(--deep-navy)] font-bold min-h-[48px] hover:bg-white transition-colors"
+                      aria-label="Sandstone op LinkedIn"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                        <path
+                          d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.65-1.86 3.4-1.86 3.63 0 4.3 2.39 4.3 5.5v6.25zM5.34 7.43c-1.14 0-2.06-.93-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.13-.92 2.06-2.06 2.06zM7.11 20.45H3.56V9h3.55v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.72C24 .77 23.21 0 22.23 0z"
+                        />
+                      </svg>
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
-          </div>
-        </div>
-  
-      </div>
+
           </div>
         </div>
       </section>
@@ -1351,13 +1342,7 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8">
           <div class="flex items-center gap-3">
-            <img
-              src="assets/img/sandstone-logo.png"
-              alt="Sandstone"
-              class="h-20 w-auto"
-              loading="lazy"
-              decoding="async"
-            />
+            <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="lazy" decoding="async" />
           </div>
 
           <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
@@ -1404,6 +1389,38 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        function getLangFromPath() {
+          var path = window.location.pathname || "/";
+          if (path.indexOf("/en/") === 0 || path === "/en") return "en";
+          if (path.indexOf("/fr/") === 0 || path === "/fr") return "fr";
+          return "nl";
+        }
+
+        function getTargetUrl(lang) {
+          if (lang === "en") return "/en/";
+          if (lang === "fr") return "/fr/";
+          return "/";
+        }
+
+        function wire(selectId) {
+          var el = document.getElementById(selectId);
+          if (!el) return;
+
+          el.value = getLangFromPath();
+
+          el.addEventListener("change", function () {
+            var lang = el.value;
+            window.location.href = getTargetUrl(lang);
+          });
+        }
+
+        wire("lang-switcher");
+        wire("lang-switcher-mobile");
+      })();
+    </script>
 
     <script>
       (function () {
@@ -1475,130 +1492,131 @@
       })();
     </script>
 
-   <script>
-  (function () {
-    const form = document.getElementById("cashback-form");
-    const thankYou = document.getElementById("thank-you");
-    const formError = document.getElementById("form-error");
-    const restartBtn = document.getElementById("restart-form");
-    const submitBtn = document.getElementById("form-submit");
+    <script>
+      (function () {
+        const form = document.getElementById("cashback-form");
+        const thankYou = document.getElementById("thank-you");
+        const formError = document.getElementById("form-error");
+        const restartBtn = document.getElementById("restart-form");
+        const submitBtn = document.getElementById("form-submit");
 
-    if (submitBtn) {
-      submitBtn.addEventListener("click", function () {
-        if (typeof gtag === "function") {
-          gtag("event", "form_submit_click", {
-            form: "cashback",
-            label: "ontvang_mijn_cashback",
-            location: "form"
+        if (submitBtn) {
+          submitBtn.addEventListener("click", function () {
+            if (typeof gtag === "function") {
+              gtag("event", "form_submit_click", {
+                form: "cashback",
+                label: "ontvang_mijn_cashback",
+                location: "form",
+              });
+            }
           });
         }
-      });
-    }
 
-    if (!form || !thankYou) return;
+        if (!form || !thankYou) return;
 
-    function setLoading(isLoading) {
-      if (!submitBtn) return;
-      submitBtn.disabled = isLoading;
-      submitBtn.classList.toggle("opacity-60", isLoading);
-      submitBtn.classList.toggle("cursor-not-allowed", isLoading);
-      submitBtn.textContent = isLoading ? "Versturen..." : "Ontvang mijn cashback";
-    }
+        function setLoading(isLoading) {
+          if (!submitBtn) return;
+          submitBtn.disabled = isLoading;
+          submitBtn.classList.toggle("opacity-60", isLoading);
+          submitBtn.classList.toggle("cursor-not-allowed", isLoading);
+          submitBtn.textContent = isLoading ? "Versturen..." : "Ontvang mijn cashback";
+        }
 
-    function showThankYou() {
-      form.classList.add("hidden");
-      if (formError) formError.classList.add("hidden");
-      thankYou.classList.remove("hidden");
-    }
+        function showThankYou() {
+          form.classList.add("hidden");
+          if (formError) formError.classList.add("hidden");
+          thankYou.classList.remove("hidden");
+        }
 
-    function showForm() {
-      thankYou.classList.add("hidden");
-      form.classList.remove("hidden");
-      if (formError) formError.classList.add("hidden");
-      form.reset();
-      setLoading(false);
-    }
-
-    async function submitLead(payload) {
-      return fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-    }
-
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-      if (formError) formError.classList.add("hidden");
-    
-      const full_name = String(document.getElementById("full_name")?.value || "").trim();
-      const email = String(document.getElementById("email")?.value || "").trim();
-      const budget = String(document.getElementById("budget")?.value || "").trim();
-      const website = String(document.getElementById("website")?.value || "").trim();
-    
-      if (!full_name || !email || !budget || !website) {
-        if (formError) formError.classList.remove("hidden");
-        return;
-      }
-    
-      setLoading(true);
-    
-      try {
-        const res = await submitLead({ full_name, email, budget, website });
-    
-        if (!res.ok) {
-          if (formError) formError.classList.remove("hidden");
+        function showForm() {
+          thankYou.classList.add("hidden");
+          form.classList.remove("hidden");
+          if (formError) formError.classList.add("hidden");
+          form.reset();
           setLoading(false);
-          return;
         }
-    
-        showThankYou();
-    
-        if (typeof gtag === "function") {
-          gtag("event", "lead_success", {
-            form: "cashback",
-            budget: budget,
-            page: "cashback_landing"
+
+        async function submitLead(payload) {
+          return fetch("/api/subscribe", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
           });
         }
-    
-        setLoading(false);
-      } catch (err) {
-        if (formError) formError.classList.remove("hidden");
-        setLoading(false);
-      }
-    });
 
-    if (restartBtn) restartBtn.addEventListener("click", showForm);
-  })();
-</script>
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          if (formError) formError.classList.add("hidden");
+
+          const full_name = String(document.getElementById("full_name")?.value || "").trim();
+          const email = String(document.getElementById("email")?.value || "").trim();
+          const budget = String(document.getElementById("budget")?.value || "").trim();
+          const website = String(document.getElementById("website")?.value || "").trim();
+
+          if (!full_name || !email || !budget || !website) {
+            if (formError) formError.classList.remove("hidden");
+            return;
+          }
+
+          setLoading(true);
+
+          try {
+            const res = await submitLead({ full_name, email, budget, website });
+
+            if (!res.ok) {
+              if (formError) formError.classList.remove("hidden");
+              setLoading(false);
+              return;
+            }
+
+            showThankYou();
+
+            if (typeof gtag === "function") {
+              gtag("event", "lead_success", {
+                form: "cashback",
+                budget: budget,
+                page: "cashback_landing",
+              });
+            }
+
+            setLoading(false);
+          } catch (err) {
+            if (formError) formError.classList.remove("hidden");
+            setLoading(false);
+          }
+        });
+
+        if (restartBtn) restartBtn.addEventListener("click", showForm);
+      })();
+    </script>
+
     <script>
       (function () {
         const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         if (prefersReducedMotion) return;
-    
+
         const steps = Array.from(document.querySelectorAll("#stappen [data-step]"));
         if (!steps.length) return;
-    
+
         function setActiveStep(el) {
           steps.forEach((s) => s.classList.toggle("is-active", s === el));
         }
-    
+
         const io = new IntersectionObserver(
           (entries) => {
             const visible = entries
               .filter((e) => e.isIntersecting)
               .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-    
+
             if (visible.length) setActiveStep(visible[0].target);
           },
           {
             root: null,
             threshold: [0.2, 0.35, 0.5, 0.65],
-            rootMargin: "-25% 0px -50% 0px"
+            rootMargin: "-25% 0px -50% 0px",
           }
         );
-    
+
         steps.forEach((s) => io.observe(s));
         setActiveStep(steps[0]);
       })();
