@@ -39,7 +39,6 @@
   <meta property="og:description"
         content="Disclaimer regarding cashback claims and liability related to Sandstone." />
   <meta property="og:url" content="https://cashback.sandstone.nl/en/disclaimer" />
-  <meta property="og:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
   <meta property="og:locale" content="en_US" />
 
   <link rel="icon" type="image/png" href="assets/img/sandstone-favicon.png" />
@@ -57,19 +56,16 @@
       --deep-navy: #001828;
       --border-light: rgba(0,24,40,0.1);
     }
-
     body {
       background-color: var(--mineral-sand);
       color: var(--deep-navy);
       font-family: "Inter", sans-serif;
     }
-
     .glass-nav {
       background: rgba(249,242,229,0.9);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-light);
     }
-
     select {
       appearance: none;
       background-image: none;
@@ -84,7 +80,6 @@
     <a href="/en/" aria-label="Back to homepage">
       <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" />
     </a>
-
     <div class="flex items-center gap-3">
       <a href="/en/" class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)]">
         Back
@@ -109,45 +104,66 @@ By using this website, you agree to this disclaimer.
 
 <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
 <h2 class="font-extrabold mb-3">1. Cashback claims and estimates</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
+<p class="text-[var(--deep-navy)]/70">
 Percentages, examples and amounts shown on this website are indicative.
-Actual cashback depends on your Google Ads spend, account configuration,
-payment setup and applicable partner program conditions.
+Actual cashback depends on realized Google Ads spend, account configuration,
+payment setup, validation and partner program conditions.
 “Up to” percentages mean cashback may be lower or not applicable.
 </p>
 </section>
 
 <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
 <h2 class="font-extrabold mb-3">2. Third-party dependency</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
+<p class="text-[var(--deep-navy)]/70">
 Sandstone uses services and partner programs from third parties, including Google.
-Changes in their terms or systems may affect the cashback program.
-Sandstone is not responsible for third-party changes or disruptions.
+Changes in terms, processes or availability may affect the cashback offer,
+its duration and payouts. Sandstone is not responsible for third-party decisions or disruptions.
 </p>
 </section>
 
 <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
 <h2 class="font-extrabold mb-3">3. Validation and eligibility</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Participation is subject to validation and compliance with applicable conditions.
-Sandstone may reject or terminate participation in case of misuse or non-compliance.
+<p class="text-[var(--deep-navy)]/70">
+Participation is subject to account validation and compliance with applicable conditions.
+Sandstone may refuse or terminate participation in case of misuse, incorrect information
+or violation of program rules.
 </p>
 </section>
 
 <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">4. No advice or guarantees</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Information on this website does not constitute financial or legal advice.
+<h2 class="font-extrabold mb-3">4. No advice, no guarantees</h2>
+<p class="text-[var(--deep-navy)]/70">
+Information on this website is general information only and does not constitute financial,
+legal or tax advice. You remain fully responsible for your Google Ads account configuration.
 Sandstone does not guarantee specific savings, ROAS, revenue or profit.
 </p>
 </section>
 
 <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
 <h2 class="font-extrabold mb-3">5. Liability</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Sandstone is not liable for direct or indirect damages,
-unless caused by intentional misconduct.
-Liability is limited to the amount invoiced in the relevant month.
+<p class="text-[var(--deep-navy)]/70">
+Sandstone is not liable for direct or indirect damages resulting from the use of this website
+or the cashback program, unless caused by intentional misconduct.
+Liability is limited to the amount paid out by liability insurance,
+or if no payout occurs, limited to €1,000.
+</p>
+</section>
+
+<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
+<h2 class="font-extrabold mb-3">6. Intellectual property</h2>
+<p class="text-[var(--deep-navy)]/70">
+All content on this website, including text, design and code,
+is owned by Sandstone or used with permission.
+Copying or reuse without written consent is prohibited,
+except where mandatory law permits.
+</p>
+</section>
+
+<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
+<h2 class="font-extrabold mb-3">7. Contact</h2>
+<p class="text-[var(--deep-navy)]/70">
+Questions about this disclaimer or the cashback program?
+Please contact your dedicated contact person or send a message via the website.
 </p>
 </section>
 
@@ -175,7 +191,6 @@ Liability is limited to the amount invoiced in the relevant month.
           <option value="en">EN</option>
           <option value="fr">FR</option>
         </select>
-
         <span class="absolute right-0 top-1/2 -translate-y-1/2 opacity-40">▾</span>
       </div>
     </div>
@@ -204,10 +219,8 @@ Liability is limited to the amount invoiced in the relevant month.
     en: "/en/disclaimer",
     fr: "/fr/disclaimer"
   };
-
   var select = document.getElementById("lang-switcher-footer");
   if (!select) return;
-
   select.value = "en";
   select.addEventListener("change", function () {
     window.location.href = PATHS[select.value];
