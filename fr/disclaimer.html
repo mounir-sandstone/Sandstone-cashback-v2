@@ -15,20 +15,23 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43LV9GYEB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-S43LV9GYEB', { anonymize_ip: true });
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-S43LV9GYEB", { anonymize_ip: true });
     </script>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Sandstone | Mentions légales</title>
-    <meta name="description"
-      content="Mentions légales relatives aux estimations de cashback, à la responsabilité et aux conditions applicables au programme Google Ads cashback de Sandstone." />
+    <meta
+      name="description"
+      content="Mentions légales et disclaimer concernant les claims de cashback, les informations et la responsabilité liés à Sandstone et au programme de cashback Google Ads."
+    />
     <meta name="robots" content="index,follow" />
 
-    <!-- Canonical + hreflang -->
     <link rel="canonical" href="https://cashback.sandstone.nl/fr/disclaimer" />
     <link rel="alternate" hreflang="nl" href="https://cashback.sandstone.nl/disclaimer" />
     <link rel="alternate" hreflang="en" href="https://cashback.sandstone.nl/en/disclaimer" />
@@ -39,36 +42,54 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sandstone" />
     <meta property="og:title" content="Mentions légales" />
-    <meta property="og:description"
-      content="Mentions légales relatives aux estimations de cashback et aux conditions du programme Google Ads cashback." />
+    <meta
+      property="og:description"
+      content="Mentions légales et disclaimer concernant le cashback Google Ads, les informations et la responsabilité liés à Sandstone."
+    />
     <meta property="og:url" content="https://cashback.sandstone.nl/fr/disclaimer" />
-    <meta property="og:image" content="assets/img/sandstone-logo.png" />
+    <meta property="og:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
     <meta property="og:locale" content="fr_FR" />
 
-    <!-- Structured data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Mentions légales",
-        "url": "https://cashback.sandstone.nl/fr/disclaimer",
-        "inLanguage": "fr-FR"
-      }
-    </script>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mentions légales" />
+    <meta
+      name="twitter:description"
+      content="Mentions légales et disclaimer concernant le cashback Google Ads, les informations et la responsabilité liés à Sandstone."
+    />
+    <meta name="twitter:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="assets/img/sandstone-favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/sandstone-favicon.png" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap"
+      rel="stylesheet"
+    />
 
     <style type="text/tailwindcss">
       :root {
         --mineral-sand: #f9f2e5;
         --deep-navy: #001828;
+        --sandstone-blue: #0055ff;
+        --gold-accent: #c5a367;
         --border-light: rgba(0, 24, 40, 0.1);
       }
 
       body {
         background-color: var(--mineral-sand);
         color: var(--deep-navy);
-        font-family: Inter, sans-serif;
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .font-display {
+        font-family: "Plus Jakarta Sans", sans-serif;
       }
 
       .glass-nav {
@@ -86,125 +107,191 @@
       }
 
       select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
         background-image: none;
       }
     </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Mentions légales",
+        "inLanguage": "fr",
+        "url": "https://cashback.sandstone.nl/fr/disclaimer",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sandstone",
+          "url": "https://cashback.sandstone.nl/"
+        }
+      }
+    </script>
   </head>
 
-  <body>
-
+  <body class="selection:bg-[var(--deep-navy)] selection:text-[var(--mineral-sand)]">
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="/fr/" aria-label="Retour à l'accueil">
-          <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" />
+        <a class="flex items-center gap-3" href="/fr/" aria-label="Retour à la page d’accueil">
+          <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="eager" decoding="async" />
         </a>
 
-        <div class="flex items-center gap-6">
-          <div class="flex items-center gap-3">
-            <a href="/fr/" class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)]">
-              Retour
-            </a>
-            <span class="text-sm text-[var(--deep-navy)]/30">/</span>
-            <span class="text-sm font-bold text-[var(--deep-navy)]">Mentions légales</span>
-          </div>
-
-          <!-- Language switcher -->
-          <div class="relative">
-            <select id="lang-switcher"
-              class="bg-transparent font-bold text-sm text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-6">
-              <option value="nl">NL</option>
-              <option value="en">EN</option>
-              <option value="fr">FR</option>
-            </select>
-            <span class="absolute right-0 top-1/2 -translate-y-1/2 opacity-40">⌄</span>
-          </div>
+        <div class="flex items-center gap-3">
+          <a href="/fr/" class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] transition-colors">
+            Retour
+          </a>
+          <span class="text-sm text-[var(--deep-navy)]/30">/</span>
+          <span class="text-sm font-bold text-[var(--deep-navy)]">Mentions légales</span>
         </div>
       </div>
     </nav>
 
     <main class="pt-32 pb-16">
       <section class="max-w-4xl mx-auto px-6">
+        <h1 class="font-display font-extrabold tracking-tight leading-[1.08] mb-6">Mentions légales</h1>
 
-        <h1 class="font-extrabold mb-6">Mentions légales (Disclaimer)</h1>
-
-        <p class="text-lg text-[var(--deep-navy)]/70 mb-10">
+        <p class="text-base md:text-lg text-[var(--deep-navy)]/70 leading-relaxed mb-10">
           Cet avertissement s'applique au site web, à l'offre de cashback Google Ads et à toutes les informations fournies par Sandstone.
           En utilisant ce site, vous acceptez les termes de ce disclaimer.
         </p>
 
         <div class="space-y-10">
-
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">1. Estimations et montants du cashback</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              Les pourcentages, exemples et montants affichés sont indicatifs.
-              Le cashback réel dépend des dépenses Google Ads vérifiées,
-              de la configuration du compte, des paramètres de facturation,
-              de la validation technique et des conditions des programmes partenaires de Google.
-              Les mentions « Jusqu'à » signifient que le montant peut être inférieur ou ne pas s'appliquer.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">1. Estimations et montants du cashback</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Les pourcentages, exemples et montants affichés sur ce site sont donnés à titre indicatif.
+                Le cashback réel dépend de vos dépenses Google Ads effectives, de la configuration de votre compte, de vos paramètres de paiement,
+                de la validation technique et des conditions des programmes partenaires de Google.
+              </p>
+              <p>
+                Nous ne garantissons pas de résultat fixe. Les mentions « Jusqu'à » signifient que votre cashback peut être inférieur ou, dans certains cas, ne pas s'appliquer.
+              </p>
+            </div>
           </section>
 
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">2. Dépendance vis-à-vis des tiers</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              Sandstone utilise des services et programmes tiers, notamment ceux de Google.
-              Toute modification de leurs conditions peut impacter l'offre de cashback.
-              Sandstone ne peut être tenu responsable des décisions ou interruptions de ces tiers.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">2. Dépendance vis-à-vis des tiers</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Sandstone utilise des services, plateformes et programmes tiers, notamment ceux de Google.
+                Tout changement dans les conditions, les processus ou la disponibilité de ces tiers peut influencer l'offre de cashback, sa durée et son paiement.
+              </p>
+              <p>Sandstone n'est pas responsable des modifications, pannes ou décisions prises par ces entités tierces.</p>
+            </div>
           </section>
 
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">3. Validation et admission</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              La participation est soumise à validation du compte et respect des conditions générales.
-              Sandstone se réserve le droit de refuser ou résilier toute demande en cas d'abus ou de non conformité.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">3. Validation et admission</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                La participation à l'offre de cashback est soumise à la validation du compte et au respect des conditions générales.
+                Sandstone se réserve le droit de refuser ou de mettre fin à une demande en cas d'abus, d'informations erronées, de non-respect des conditions
+                ou d'incompatibilité avec les règles du programme.
+              </p>
+            </div>
           </section>
 
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">4. Absence de conseil et de garantie</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              Les informations fournies ne constituent pas un conseil financier, juridique ou fiscal.
-              Sandstone ne garantit aucun résultat spécifique en matière d'économies ou de rentabilité.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">4. Absence de conseil et de garantie</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Les informations sur ce site sont fournies à titre explicatif et ne constituent pas un conseil financier, juridique ou fiscal.
+                Vous restez seul responsable de vos choix et de la configuration de votre compte Google Ads.
+              </p>
+              <p>Sandstone ne garantit aucun résultat spécifique en termes d'économies, de ROAS, de chiffre d'affaires ou de profit.</p>
+            </div>
           </section>
 
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">5. Responsabilité</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              Sandstone n'est pas responsable des dommages directs ou indirects,
-              sauf en cas de faute intentionnelle ou de négligence grave.
-              La responsabilité est limitée au montant couvert par l'assurance,
-              ou à défaut à un maximum de 1 000 €.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">5. Responsabilité</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Sandstone n'est pas responsable des dommages directs ou indirects résultant de l'utilisation de ce site ou de l'offre de cashback,
+                sauf en cas de faute intentionnelle ou de négligence grave.
+              </p>
+              <p>
+                Dans la mesure permise par la loi, la responsabilité est limitée au montant versé par l'assurance responsabilité civile
+                ou, à défaut, à un montant maximum de 1 000 €.
+              </p>
+            </div>
           </section>
 
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">6. Propriété intellectuelle</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              Tout le contenu de ce site est la propriété de Sandstone.
-              Toute reproduction ou utilisation est interdite sans autorisation écrite préalable.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">6. Propriété intellectuelle</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Tout le contenu de ce site (texte, design, code) est la propriété de Sandstone ou utilisé avec autorisation.
+                Toute copie ou réutilisation est interdite sans accord écrit préalable.
+              </p>
+            </div>
           </section>
 
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-            <h2 class="font-extrabold mb-3">7. Contact</h2>
-            <p class="text-[var(--deep-navy)]/70 leading-relaxed">
-              Pour toute question concernant ce disclaimer ou l'offre de cashback,
-              contactez votre interlocuteur dédié ou envoyez un message via le site.
-            </p>
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">7. Contact</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Pour toute question concernant ce disclaimer ou l'offre de cashback, veuillez contacter votre interlocuteur dédié
+                ou nous envoyer un message via le site web.
+              </p>
+            </div>
           </section>
 
           <section class="text-xs text-[var(--deep-navy)]/50">
-            <p><strong>Dernière mise à jour :</strong> 4 février 2026</p>
+            <p><span class="font-bold">Dernière mise à jour :</span> 4 février 2026</p>
           </section>
-
         </div>
       </section>
     </main>
 
+    <!-- Footer: centered + language switcher (no border) -->
+    <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col items-center text-center gap-8">
+          <div class="flex items-center justify-center gap-4">
+            <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="lazy" decoding="async" />
+
+            <div class="relative">
+              <select
+                id="lang-switcher-footer"
+                class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-5 transition-colors
+                       !border-0 !ring-0 !shadow-none !outline-none
+                       focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                       focus-visible:!ring-0"
+                aria-label="Langue"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+
+              <span
+                class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40"
+                aria-hidden="true"
+              >
+                ▾
+              </span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/fr/privacy-policy">Politique de confidentialité</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/fr/terms-of-service">Conditions d'utilisation</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/fr/disclaimer">Mentions légales</a>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-[var(--deep-navy)]/5 text-center">
+          <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
+            © 2026 Sandstone. Tous droits réservés. Sandstone Project Management Services L.L.C. (License NO #1275831) trading as
+            'Sandstone' | TRN: 104337349500003
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer language switcher -->
     <script>
       (function () {
         var PATHS = {
@@ -213,22 +300,16 @@
           fr: "/fr/disclaimer"
         };
 
-        function getLang() {
-          var path = window.location.pathname;
-          if (path.indexOf("/en/") === 0) return "en";
-          if (path.indexOf("/fr/") === 0) return "fr";
-          return "nl";
-        }
+        var el = document.getElementById("lang-switcher-footer");
+        if (!el) return;
 
-        var select = document.getElementById("lang-switcher");
-        if (!select) return;
+        el.value = "fr";
 
-        select.value = getLang();
-        select.addEventListener("change", function () {
-          window.location.href = PATHS[select.value];
+        el.addEventListener("change", function () {
+          var lang = el.value;
+          window.location.href = PATHS[lang] || "/disclaimer";
         });
       })();
     </script>
-
   </body>
 </html>
