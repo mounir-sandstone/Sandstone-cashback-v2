@@ -1,244 +1,354 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <script>
-    (function () {
-      var script = document.createElement("script");
-      script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1";
-      script.setAttribute("qooqie-callback-widget", "");
-      script.id = "6985a9bbfbd9c2002e966a05";
-      document.head.appendChild(script);
-    })();
-  </script>
+  <head>
+    <script>
+      (function () {
+        var script = document.createElement("script");
+        script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1";
+        script.setAttribute("qooqie-callback-widget", "");
+        script.id = "6985a9bbfbd9c2002e966a05";
+        document.head.appendChild(script);
+      })();
+    </script>
 
-  <!-- Google tag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43LV9GYEB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-S43LV9GYEB", { anonymize_ip: true });
-  </script>
+    <!-- Google tag (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43LV9GYEB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-S43LV9GYEB", { anonymize_ip: true });
+    </script>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Sandstone | Conditions Générales d'Utilisation</title>
-  <meta name="description"
-        content="Conditions générales d'utilisation de Sandstone. Découvrez les règles applicables à nos services et au programme Google Ads cashback." />
-  <meta name="robots" content="index,follow" />
+    <title>Sandstone | Conditions générales d'utilisation</title>
+    <meta
+      name="description"
+      content="Conditions générales d'utilisation de Sandstone. Découvrez les règles applicables à nos services, responsabilités et à l'utilisation du site."
+    />
+    <meta name="robots" content="index,follow" />
 
-  <!-- Canonical + hreflang -->
-  <link rel="canonical" href="https://cashback.sandstone.nl/fr/terms-of-service" />
-  <link rel="alternate" hreflang="nl" href="https://cashback.sandstone.nl/terms-of-service" />
-  <link rel="alternate" hreflang="en" href="https://cashback.sandstone.nl/en/terms-of-service" />
-  <link rel="alternate" hreflang="fr" href="https://cashback.sandstone.nl/fr/terms-of-service" />
-  <link rel="alternate" hreflang="x-default" href="https://cashback.sandstone.nl/" />
+    <link rel="canonical" href="https://cashback.sandstone.nl/fr/terms-of-service" />
+    <link rel="alternate" hreflang="nl" href="https://cashback.sandstone.nl/terms-of-service" />
+    <link rel="alternate" hreflang="en" href="https://cashback.sandstone.nl/en/terms-of-service" />
+    <link rel="alternate" hreflang="fr" href="https://cashback.sandstone.nl/fr/terms-of-service" />
+    <link rel="alternate" hreflang="x-default" href="https://cashback.sandstone.nl/" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sandstone" />
-  <meta property="og:title" content="Conditions Générales d'Utilisation" />
-  <meta property="og:description"
-        content="Conditions générales applicables aux services et au programme Google Ads cashback de Sandstone." />
-  <meta property="og:url" content="https://cashback.sandstone.nl/fr/terms-of-service" />
-  <meta property="og:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
-  <meta property="og:locale" content="fr_FR" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sandstone" />
+    <meta property="og:title" content="Conditions générales d'utilisation" />
+    <meta
+      property="og:description"
+      content="Conditions générales applicables aux services et à l'utilisation du site de Sandstone, y compris le programme Google Ads cashback."
+    />
+    <meta property="og:url" content="https://cashback.sandstone.nl/fr/terms-of-service" />
+    <meta property="og:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
+    <meta property="og:locale" content="fr_FR" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Conditions Générales d'Utilisation" />
-  <meta name="twitter:description"
-        content="Conditions générales applicables aux services et au programme Google Ads cashback de Sandstone." />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Conditions générales d'utilisation" />
+    <meta
+      name="twitter:description"
+      content="Conditions générales applicables aux services et à l'utilisation du site de Sandstone, y compris le programme Google Ads cashback."
+    />
 
-  <link rel="icon" type="image/png" href="assets/img/sandstone-favicon.png" />
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="assets/img/sandstone-favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/sandstone-favicon.png" />
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Conditions Générales d'Utilisation",
-    "url": "https://cashback.sandstone.nl/fr/terms-of-service",
-    "inLanguage": "fr"
-  }
-  </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Conditions générales d'utilisation",
+        "url": "https://cashback.sandstone.nl/fr/terms-of-service",
+        "inLanguage": "fr"
+      }
+    </script>
 
-  <style type="text/tailwindcss">
-    :root {
-      --mineral-sand: #f9f2e5;
-      --deep-navy: #001828;
-      --border-light: rgba(0,24,40,0.1);
-    }
-    body {
-      background-color: var(--mineral-sand);
-      color: var(--deep-navy);
-      font-family: "Inter", sans-serif;
-    }
-    .glass-nav {
-      background: rgba(249,242,229,0.9);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-light);
-    }
-    h1 { font-size: clamp(2.25rem, 7vw, 3.25rem); }
-    h2 { font-size: clamp(1.25rem, 3.6vw, 1.75rem); }
-    select { appearance:none; background-image:none; }
-  </style>
-</head>
+    <style type="text/tailwindcss">
+      :root {
+        --mineral-sand: #f9f2e5;
+        --deep-navy: #001828;
+        --sandstone-blue: #0055ff;
+        --gold-accent: #c5a367;
+        --border-light: rgba(0, 24, 40, 0.1);
+      }
 
-<body>
+      body {
+        background-color: var(--mineral-sand);
+        color: var(--deep-navy);
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
 
-<nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
-  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    <a href="/fr/" aria-label="Retour à l'accueil">
-      <img src="/assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" />
-    </a>
+      .font-display {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
 
-    <div class="flex items-center gap-6">
-      <div class="flex items-center gap-3">
-        <a href="/fr/" class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)]">
-          Retour
+      .glass-nav {
+        background: rgba(249, 242, 229, 0.9);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-light);
+      }
+
+      h1 {
+        font-size: clamp(2.25rem, 7vw, 3.25rem);
+      }
+
+      h2 {
+        font-size: clamp(1.25rem, 3.6vw, 1.75rem);
+      }
+
+      [id] {
+        scroll-margin-top: 6rem;
+      }
+
+      @media (min-width: 1024px) {
+        [id] {
+          scroll-margin-top: 7rem;
+        }
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: none;
+      }
+    </style>
+  </head>
+
+  <body class="selection:bg-[var(--deep-navy)] selection:text-[var(--mineral-sand)]">
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a class="flex items-center gap-3" href="/fr/" aria-label="Retour à l'accueil">
+          <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="eager" decoding="async" />
         </a>
-        <span class="text-sm text-[var(--deep-navy)]/30">/</span>
-        <span class="text-sm font-bold text-[var(--deep-navy)]">Conditions Générales</span>
+
+        <div class="flex items-center gap-3">
+          <a href="/fr/" class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] transition-colors">
+            Retour
+          </a>
+          <span class="text-sm text-[var(--deep-navy)]/30">/</span>
+          <span class="text-sm font-bold text-[var(--deep-navy)]">Conditions générales</span>
+        </div>
       </div>
+    </nav>
 
-      <div class="relative">
-        <select id="lang-switcher"
-                class="bg-transparent font-bold text-sm text-[var(--deep-navy)]/60 cursor-pointer pr-6">
-          <option value="nl">NL</option>
-          <option value="en">EN</option>
-          <option value="fr">FR</option>
-        </select>
-        <span class="absolute right-0 top-1/2 -translate-y-1/2 opacity-40">▾</span>
+    <main class="pt-32 pb-16">
+      <section class="max-w-4xl mx-auto px-6">
+        <h1 class="font-display font-extrabold tracking-tight leading-[1.08] mb-6">Conditions générales d'utilisation</h1>
+
+        <p class="text-base md:text-lg text-[var(--deep-navy)]/70 leading-relaxed mb-10">
+          Les présentes conditions générales s'appliquent à l'utilisation du site web et des services de Sandstone. En utilisant notre site ou en soumettant une
+          demande, vous acceptez sans réserve ces conditions.
+        </p>
+
+        <div class="space-y-10">
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">1. Définitions</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <ul class="list-disc pl-5 space-y-2">
+                <li><strong>Sandstone</strong> : le prestataire de services.</li>
+                <li><strong>Client</strong> : toute personne physique ou morale utilisant les services.</li>
+                <li><strong>Services</strong> : l'ensemble des prestations proposées par Sandstone, notamment le programme de cashback Google Ads.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">2. Applicabilité</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>Ces conditions s'appliquent à toutes les offres, accords et services de Sandstone, sauf accord écrit contraire.</p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">3. Prestation de services</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Sandstone propose un programme de cashback pour les annonceurs Google Ads, basé sur les programmes partenaires disponibles. La participation est
+                soumise à acceptation et validation technique.
+              </p>
+              <p>Sandstone se réserve le droit de refuser une demande sans justification.</p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">4. Responsabilités du client</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Le client s'engage à fournir des informations exactes et complètes.</li>
+                <li>Le client demeure seul responsable de son compte Google Ads.</li>
+                <li>Le client est responsable du paiement rapide et ponctuel des factures.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">5. Paiements et facturation</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Le paiement s'effectue via un profil de paiement géré par Sandstone. Un modèle post payé peut être utilisé lors de la phase de lancement, avant de
+                passer à un modèle pré payé.
+              </p>
+              <p>
+                Le cashback est versé mensuellement sur la base des dépenses publicitaires réelles, sous réserve du respect de toutes les conditions et de la
+                validation de la dépense.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">6. Responsabilité</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Sandstone n'est pas responsable des dommages indirects, des dommages consécutifs ou des pertes de profits. La responsabilité est, dans tous les
+                cas, limitée au montant facturé par Sandstone au cours du mois concerné.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">7. Propriété intellectuelle</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Tout le contenu de ce site, y compris les textes, logos et designs, est la propriété de Sandstone et ne peut être utilisé sans autorisation écrite
+                préalable.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">8. Résiliation</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Les deux parties peuvent mettre fin à la collaboration par écrit, dans le respect des obligations en cours. Sandstone se réserve le droit de
+                suspendre immédiatement les services en cas d'abus ou de fraude.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">9. Modifications</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>Sandstone peut modifier ces conditions à tout moment. La version la plus récente est toujours disponible sur le site web.</p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">10. Droit applicable</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Ces conditions sont régies exclusivement par le droit néerlandais. Tout litige sera soumis aux tribunaux compétents des Pays-Bas.
+              </p>
+            </div>
+          </section>
+
+          <section class="text-xs text-[var(--deep-navy)]/50">
+            <p><span class="font-bold">Dernière mise à jour :</span> 4 février 2026</p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col items-center text-center gap-8">
+          <div class="flex items-center justify-center gap-4">
+            <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="lazy" decoding="async" />
+
+            <div class="relative">
+              <select
+                id="lang-switcher-footer"
+                class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-5 transition-colors
+                       !border-0 !ring-0 !shadow-none !outline-none
+                       focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                       focus-visible:!ring-0"
+                aria-label="Langue"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+
+              <span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40" aria-hidden="true">
+                expand_more
+              </span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/fr/privacy-policy">Politique de confidentialité</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/fr/terms-of-service">Conditions d'utilisation</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/fr/disclaimer">Mentions légales</a>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-[var(--deep-navy)]/5 text-center w-full">
+            <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
+              © 2026 Sandstone. All Rights Reserved. Sandstone Project Management Services L.L.C. (License NO #1275831) trading as 'Sandstone' | TRN: 104337349500003
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </footer>
 
-<main class="pt-32 pb-16">
-<section class="max-w-4xl mx-auto px-6">
-<h1 class="font-extrabold mb-6">Conditions Générales d'Utilisation</h1>
+    <!-- Language switcher: footer only -->
+    <script>
+      (function () {
+        var STORAGE_KEY = "ss_lang_pref";
 
-<p class="text-lg text-[var(--deep-navy)]/70 mb-10">
-Les présentes conditions générales s'appliquent à l'utilisation du site web et des services de Sandstone.
-En utilisant notre site ou en soumettant une demande, vous acceptez sans réserve ces conditions.
-</p>
+        function getLangFromPath() {
+          var path = window.location.pathname || "/";
+          if (path.indexOf("/en/") === 0 || path === "/en") return "en";
+          if (path.indexOf("/fr/") === 0 || path === "/fr") return "fr";
+          return "nl";
+        }
 
-<div class="space-y-10">
+        function getTargetUrl(lang) {
+          var base = "/terms-of-service";
+          if (lang === "en") return "/en" + base;
+          if (lang === "fr") return "/fr" + base;
+          return base;
+        }
 
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">1. Définitions</h2>
-<ul class="list-disc pl-5 space-y-2 text-[var(--deep-navy)]/70">
-<li><strong>Sandstone</strong> : le prestataire de services.</li>
-<li><strong>Client</strong> : toute personne physique ou morale utilisant les services.</li>
-<li><strong>Services</strong> : l'ensemble des prestations proposées par Sandstone, notamment le programme de cashback Google Ads.</li>
-</ul>
-</section>
+        function wire(selectId) {
+          var el = document.getElementById(selectId);
+          if (!el) return;
 
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">2. Applicabilité</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Ces conditions s'appliquent à toutes les offres, accords et services de Sandstone, sauf accord écrit contraire.
-</p>
-</section>
+          el.value = getLangFromPath();
 
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">3. Prestation de Services</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Sandstone propose un programme de cashback pour les annonceurs Google Ads, basé sur les programmes partenaires disponibles.
-La participation est soumise à acceptation et validation technique.
-Sandstone se réserve le droit de refuser une demande sans justification.
-</p>
-</section>
+          el.addEventListener("change", function () {
+            var lang = el.value;
+            try {
+              localStorage.setItem(STORAGE_KEY, lang);
+            } catch (e) {}
+            window.location.href = getTargetUrl(lang);
+          });
+        }
 
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">4. Responsabilités du Client</h2>
-<ul class="list-disc pl-5 space-y-2 text-[var(--deep-navy)]/70">
-<li>Fournir des informations exactes et complètes.</li>
-<li>Rester seul responsable de son compte Google Ads.</li>
-<li>Respecter les obligations contractuelles et financières.</li>
-</ul>
-</section>
-
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">5. Paiements et Facturation</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Le paiement s'effectue via un profil géré par Sandstone.
-Un modèle post-payé peut être utilisé avant passage à un modèle pré-payé.
-Le cashback est versé mensuellement selon les dépenses réelles validées.
-</p>
-</section>
-
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">6. Responsabilité</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Sandstone n'est pas responsable des dommages indirects ou pertes de profits.
-La responsabilité est limitée au montant facturé au cours du mois concerné.
-</p>
-</section>
-
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">7. Propriété Intellectuelle</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Tout le contenu du site est la propriété de Sandstone et ne peut être utilisé sans autorisation écrite préalable.
-</p>
-</section>
-
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">8. Résiliation</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Les deux parties peuvent mettre fin à la collaboration par écrit.
-Sandstone peut suspendre immédiatement les services en cas d'abus ou fraude.
-</p>
-</section>
-
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">9. Modifications</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Sandstone peut modifier ces conditions à tout moment.
-</p>
-</section>
-
-<section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-8">
-<h2 class="font-extrabold mb-3">10. Droit Applicable</h2>
-<p class="text-[var(--deep-navy)]/70 leading-relaxed">
-Ces conditions sont régies exclusivement par le droit néerlandais.
-Tout litige sera soumis aux tribunaux compétents des Pays-Bas.
-</p>
-</section>
-
-<section class="text-xs text-[var(--deep-navy)]/50">
-<p><strong>Dernière mise à jour :</strong> 4 février 2026</p>
-</section>
-
-</div>
-</section>
-</main>
-
-<script>
-(function () {
-  var PATHS = {
-    nl: "/terms-of-service",
-    en: "/en/terms-of-service",
-    fr: "/fr/terms-of-service"
-  };
-
-  var select = document.getElementById("lang-switcher");
-  if (!select) return;
-
-  select.value = "fr";
-  select.addEventListener("change", function () {
-    window.location.href = PATHS[select.value];
-  });
-})();
-</script>
-
-</body>
+        wire("lang-switcher-footer");
+      })();
+    </script>
+  </body>
 </html>
