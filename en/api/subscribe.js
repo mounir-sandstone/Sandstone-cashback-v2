@@ -29,6 +29,7 @@ async function klaviyoFetch(path, { method = "GET", apiKey, revision, body } = {
 
   const text = await res.text();
   let json = null;
+
   try {
     json = text ? JSON.parse(text) : null;
   } catch {
@@ -80,6 +81,15 @@ module.exports = async (req, res) => {
   const budget = String(payload.budget || "").trim();
   const website = String(payload.website || "").trim();
 
+  // 🔹 multilanguage support
+  const language = String(payload.language || "nl").trim().toLowerCase();
+
+  // 🔹 optional tracking
+  const utm_source = payload.utm_source || null;
+  const utm_medium = payload.utm_medium || null;
+  const utm_campaign = payload.utm_campaign || null;
+  const page_path = payload.page_path || null;
+
   if (!full_name || !email || !budget || !website) {
     res.statusCode = 400;
     res.setHeader("Content-Type", "application/json; charset=utf-8");
@@ -92,7 +102,7 @@ module.exports = async (req, res) => {
   const last_name = parts.join(" ");
 
   try {
-    // 1) Create profile (of update als email al bestaat)
+    // 1️⃣ Create or update profile
     const createProfileBody = {
       data: {
         type: "profile",
@@ -104,6 +114,11 @@ module.exports = async (req, res) => {
             budget,
             website,
             source: "cashback.sandstone.nl",
+            language,
+            page_path,
+            utm_source,
+            utm_medium,
+            utm_campaign,
           },
         },
       },
@@ -116,15 +131,18 @@ module.exports = async (req, res) => {
       body: createProfileBody,
     });
 
-    // Als profile al bestaat kan Klaviyo een 409 geven. Dan pakken we id via lookup endpoint.
     let profileId = profileRes?.json?.data?.id || null;
 
+    // Handle duplicate profile
     if (!profileId && profileRes.status === 409) {
-      const lookup = await klaviyoFetch(`/profiles/?filter=equals(email,"${encodeURIComponent(email)}")`, {
-        method: "GET",
-        apiKey,
-        revision,
-      });
+      const lookup = await klaviyoFetch(
+        `/profiles/?filter=equals(email,"${email}")`,
+        {
+          method: "GET",
+          apiKey,
+          revision,
+        }
+      );
 
       profileId = lookup?.json?.data?.[0]?.id || null;
     }
@@ -142,17 +160,20 @@ module.exports = async (req, res) => {
       return;
     }
 
-    // 2) Add profile to list
+    // 2️⃣ Add profile to list
     const addToListBody = {
       data: [{ type: "profile", id: profileId }],
     };
 
-    const addRes = await klaviyoFetch(`/lists/${listId}/relationships/profiles/`, {
-      method: "POST",
-      apiKey,
-      revision,
-      body: addToListBody,
-    });
+    const addRes = await klaviyoFetch(
+      `/lists/${listId}/relationships/profiles/`,
+      {
+        method: "POST",
+        apiKey,
+        revision,
+        body: addToListBody,
+      }
+    );
 
     if (!addRes.ok) {
       res.statusCode = 500;
@@ -173,6 +194,11 @@ module.exports = async (req, res) => {
   } catch (e) {
     res.statusCode = 500;
     res.setHeader("Content-Type", "application/json; charset=utf-8");
-    res.end(JSON.stringify({ error: "Server error", detail: String(e?.message || e) }));
+    res.end(
+      JSON.stringify({
+        error: "Server error",
+        detail: String(e?.message || e),
+      })
+    );
   }
 };
