@@ -1540,5 +1540,58 @@
         });
       })();
     </script>
+   
+    <!-- Steps: active highlight on scroll -->
+<script>
+  (function () {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
+    const section = document.getElementById("stappen");
+    if (!section) return;
+
+    const steps = Array.from(section.querySelectorAll("[data-step]"));
+    if (!steps.length) return;
+
+    function setActiveStep(el) {
+      steps.forEach((s) => s.classList.toggle("is-active", s === el));
+    }
+
+    function pickClosestToCenter(entries) {
+      const centerY = window.innerHeight / 2;
+      let best = null;
+      let bestDist = Infinity;
+
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const rect = entry.target.getBoundingClientRect();
+        const stepCenter = rect.top + rect.height / 2;
+        const dist = Math.abs(stepCenter - centerY);
+
+        if (dist < bestDist) {
+          bestDist = dist;
+          best = entry.target;
+        }
+      }
+
+      return best;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        const best = pickClosestToCenter(entries);
+        if (best) setActiveStep(best);
+      },
+      {
+        root: null,
+        threshold: [0.01, 0.15, 0.3, 0.45, 0.6],
+        rootMargin: "-10% 0px -10% 0px"
+      }
+    );
+
+    steps.forEach((s) => io.observe(s));
+    setActiveStep(steps[0]);
+  })();
+</script>
   </body>
 </html>
