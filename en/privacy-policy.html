@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
-    <script> 
-      (function() { var script = document.createElement('script'); 
-                   script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1"; 
-                   script.setAttribute("qooqie-callback-widget", ""); 
-                   script.id = "6985a9bbfbd9c2002e966a05"; 
-                   document.head.appendChild(script); })();
+    <script>
+      (function () {
+        var script = document.createElement("script");
+        script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1";
+        script.setAttribute("qooqie-callback-widget", "");
+        script.id = "6985a9bbfbd9c2002e966a05";
+        document.head.appendChild(script);
+      })();
     </script>
-    
+
     <!-- Google tag (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43LV9GYEB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-S43LV9GYEB', {
-        anonymize_ip: true
-      });
+      gtag("js", new Date());
+      gtag("config", "G-S43LV9GYEB", { anonymize_ip: true });
     </script>
+
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Sandstone | Privacy Policy</title>
     <meta
       name="description"
-      content="Privacy policy van Sandstone. Lees hoe wij omgaan met persoonsgegevens, cookies en gegevensverwerking."
+      content="Sandstone’s privacy policy. Learn how we handle personal data, cookies, and data processing within the Google Ads cashback program."
     />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://cashback.sandstone.nl/privacy-policy" />
+
+    <!-- Canonical + hreflang -->
+    <link rel="canonical" href="https://cashback.sandstone.nl/en/privacy-policy" />
+    <link rel="alternate" hreflang="nl" href="https://cashback.sandstone.nl/privacy-policy" />
+    <link rel="alternate" hreflang="en" href="https://cashback.sandstone.nl/en/privacy-policy" />
+    <link rel="alternate" hreflang="fr" href="https://cashback.sandstone.nl/fr/privacy-policy" />
+    <link rel="alternate" hreflang="x-default" href="https://cashback.sandstone.nl/privacy-policy" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -37,30 +43,44 @@
     <meta property="og:title" content="Privacy Policy" />
     <meta
       property="og:description"
-      content="Privacy policy van Sandstone. Lees hoe wij omgaan met persoonsgegevens, cookies en gegevensverwerking."
+      content="Sandstone’s privacy policy. Learn how we handle personal data, cookies, and data processing within the Google Ads cashback program."
     />
-    <meta property="og:url" content="https://cashback.sandstone.nl/privacy-policy" />
+    <meta property="og:url" content="https://cashback.sandstone.nl/en/privacy-policy" />
+    <meta property="og:image" content="assets/img/sandstone-logo.png" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Privacy Policy" />
     <meta
       name="twitter:description"
-      content="Privacy policy van Sandstone. Lees hoe wij omgaan met persoonsgegevens, cookies en gegevensverwerking."
+      content="Sandstone’s privacy policy. Learn how we handle personal data, cookies, and data processing within the Google Ads cashback program."
     />
+    <meta name="twitter:image" content="assets/img/sandstone-logo.png" />
 
     <!-- Icons -->
     <link rel="icon" type="image/png" href="assets/img/sandstone-favicon.png" />
     <link rel="apple-touch-icon" href="assets/img/sandstone-favicon.png" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy",
+        "url": "https://cashback.sandstone.nl/en/privacy-policy",
+        "inLanguage": "en"
+      }
+    </script>
 
     <style type="text/tailwindcss">
       :root {
@@ -96,14 +116,9 @@
         font-size: clamp(1.25rem, 3.6vw, 1.75rem);
       }
 
-      [id] {
-        scroll-margin-top: 6rem;
-      }
-
-      @media (min-width: 1024px) {
-        [id] {
-          scroll-margin-top: 7rem;
-        }
+      select {
+        appearance: none;
+        background-image: none;
       }
     </style>
   </head>
@@ -111,7 +126,7 @@
   <body class="selection:bg-[var(--deep-navy)] selection:text-[var(--mineral-sand)]">
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a class="flex items-center gap-3" href="/" aria-label="Terug naar homepage">
+        <a class="flex items-center gap-3" href="/en/" aria-label="Back to homepage">
           <img
             src="assets/img/sandstone-logo.png"
             alt="Sandstone"
@@ -121,15 +136,35 @@
           />
         </a>
 
-        <div class="flex items-center gap-3">
-          <a
-            href="/"
-            class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] transition-colors"
-          >
-            Terug
-          </a>
-          <span class="text-sm text-[var(--deep-navy)]/30">/</span>
-          <span class="text-sm font-bold text-[var(--deep-navy)]">Privacy Policy</span>
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-3">
+            <a
+              href="/en/"
+              class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] transition-colors"
+            >
+              Back
+            </a>
+            <span class="text-sm text-[var(--deep-navy)]/30">/</span>
+            <span class="text-sm font-bold text-[var(--deep-navy)]">Privacy Policy</span>
+          </div>
+
+          <!-- Language switcher -->
+          <div class="relative">
+            <select
+              id="lang-switcher"
+              class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-6 transition-colors
+                     !border-0 !ring-0 !shadow-none !outline-none
+                     focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none"
+              aria-label="Language"
+            >
+              <option value="nl">NL</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+            <span class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40" aria-hidden="true">
+              ▾
+            </span>
+          </div>
         </div>
       </div>
     </nav>
@@ -141,121 +176,140 @@
         </h1>
 
         <p class="text-base md:text-lg text-[var(--deep-navy)]/70 leading-relaxed mb-10">
-          Sandstone hecht veel waarde aan jouw privacy en gaat zorgvuldig om met persoonsgegevens.
-          In deze privacyverklaring leggen wij uit welke gegevens wij verzamelen, waarom we dat doen en hoe we deze beschermen.
+          Sandstone values your privacy and handles personal data with care.
+          This privacy policy explains what data we collect, why we collect it, and how we protect it.
         </p>
 
         <div class="space-y-10">
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">1. Wie zijn wij?</h2>
+            <h2 class="font-display font-extrabold mb-3">1. Who we are</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
               <p>
-                Sandstone is een digitaal bureau en Google Partner, gevestigd in Nederland en Dubai.
-                Wij bieden diensten aan op het gebied van digitale strategie, advertising en cashbackprogramma’s voor Google Ads.
+                Sandstone is a digital agency and Google Partner. We provide digital strategy and advertising services and offer a Google Ads cashback structure.
+              </p>
+              <p>
+                If you have questions about privacy, you can reach us via the contact options on this website.
               </p>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">2. Welke persoonsgegevens verzamelen wij?</h2>
+            <h2 class="font-display font-extrabold mb-3">2. What personal data we collect</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
               <p>
-                Wij verwerken uitsluitend persoonsgegevens die jij zelf aan ons verstrekt, bijvoorbeeld via het aanvraagformulier op de website.
+                We only process personal data that you provide to us, for example through the application form on our website.
               </p>
               <ul class="list-disc pl-5 space-y-2">
-                <li>Naam</li>
-                <li>Zakelijk e-mailadres</li>
+                <li>Name</li>
+                <li>Business email address</li>
                 <li>Website URL</li>
-                <li>Google Ads budget (indicatie)</li>
-                <li>Technische gegevens zoals IP-adres en browser (geanonimiseerd)</li>
+                <li>Google Ads budget (estimate)</li>
+                <li>Technical data such as IP address and browser (anonymized where possible)</li>
               </ul>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">3. Waarvoor gebruiken wij deze gegevens?</h2>
+            <h2 class="font-display font-extrabold mb-3">3. Why we use this data</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
-              <p>Wij gebruiken jouw gegevens uitsluitend voor de volgende doeleinden:</p>
+              <p>We use your data only for the following purposes:</p>
               <ul class="list-disc pl-5 space-y-2">
-                <li>Contact opnemen naar aanleiding van jouw aanvraag</li>
-                <li>Beoordelen of jouw account in aanmerking komt voor cashback</li>
-                <li>Administratieve en contractuele afhandeling</li>
-                <li>Verbetering van onze dienstverlening</li>
+                <li>Contacting you regarding your request</li>
+                <li>Assessing whether your account qualifies for cashback</li>
+                <li>Administrative and contractual processing</li>
+                <li>Improving our services and security</li>
               </ul>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">4. Delen van gegevens</h2>
+            <h2 class="font-display font-extrabold mb-3">4. Legal basis</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
               <p>
-                Wij delen jouw gegevens niet met derden, tenzij dit noodzakelijk is voor uitvoering van onze dienstverlening
-                of om te voldoen aan wettelijke verplichtingen. Denk hierbij aan:
+                We process personal data on one or more of the following legal bases:
               </p>
               <ul class="list-disc pl-5 space-y-2">
-                <li>Google (uitsluitend indien relevant voor de dienst)</li>
-                <li>Softwaretools voor CRM en communicatie, zoals Klaviyo</li>
+                <li>Performance of a contract or taking steps at your request</li>
+                <li>Legitimate interest, such as website security and improvement</li>
+                <li>Consent, where legally required (for example for certain cookies)</li>
+                <li>Legal obligation</li>
               </ul>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">5. Bewaartermijnen</h2>
+            <h2 class="font-display font-extrabold mb-3">5. Sharing data</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
               <p>
-                Wij bewaren persoonsgegevens niet langer dan noodzakelijk. In de meeste gevallen hanteren wij een bewaartermijn
-                van maximaal 24 maanden na het laatste contactmoment, tenzij wetgeving anders vereist.
+                We do not share your data with third parties unless it is necessary to deliver our services or to comply with legal obligations. This may include:
               </p>
-            </div>
-          </section>
-
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">6. Cookies</h2>
-            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
-              <p>
-                Sandstone gebruikt alleen functionele en analytische cookies die geen inbreuk maken op jouw privacy.
-                Tracking cookies worden alleen geplaatst indien hiervoor expliciet toestemming is gegeven.
-              </p>
-            </div>
-          </section>
-
-          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">7. Jouw rechten</h2>
-            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
-              <p>Je hebt het recht om:</p>
               <ul class="list-disc pl-5 space-y-2">
-                <li>Je persoonsgegevens in te zien</li>
-                <li>Je gegevens te laten corrigeren of verwijderen</li>
-                <li>Bezwaar te maken tegen verwerking</li>
-                <li>Gegevensoverdraagbaarheid aan te vragen</li>
+                <li>Google (only when required for the service)</li>
+                <li>CRM and communication tools (for example email and forms)</li>
+                <li>Hosting and security providers</li>
               </ul>
               <p>
-                Voor verzoeken kun je contact opnemen via het contactformulier op de website.
+                Where required, we enter into data processing agreements with our processors.
               </p>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">8. Beveiliging</h2>
+            <h2 class="font-display font-extrabold mb-3">6. Data retention</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
               <p>
-                Wij nemen passende technische en organisatorische maatregelen om persoonsgegevens te beschermen tegen verlies,
-                misbruik en ongeoorloofde toegang.
+                We do not store personal data longer than necessary. In most cases, we retain data for up to 24 months after the last contact, unless legislation requires a longer period.
               </p>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
-            <h2 class="font-display font-extrabold mb-3">9. Wijzigingen</h2>
+            <h2 class="font-display font-extrabold mb-3">7. Cookies</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
               <p>
-                Sandstone behoudt zich het recht voor deze privacyverklaring te wijzigen. Wij adviseren je deze pagina regelmatig te raadplegen.
+                Sandstone uses functional and analytics cookies. Where legally required, we ask for consent before placing tracking cookies.
+                You can manage cookies through your browser settings.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">8. Your rights</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>You have the right to:</p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Access your personal data</li>
+                <li>Correct or delete your data</li>
+                <li>Object to processing</li>
+                <li>Restrict processing</li>
+                <li>Request data portability</li>
+              </ul>
+              <p>
+                You can submit a request via the contact options on this website. We respond as quickly as possible, within the legal timeframe.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">9. Security</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                We take appropriate technical and organizational measures to protect personal data against loss, misuse, and unauthorized access.
+              </p>
+            </div>
+          </section>
+
+          <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
+            <h2 class="font-display font-extrabold mb-3">10. Changes</h2>
+            <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
+              <p>
+                Sandstone may update this privacy policy. We recommend checking this page regularly.
               </p>
             </div>
           </section>
 
           <section class="text-xs text-[var(--deep-navy)]/50">
-            <p><span class="font-bold">Laatst bijgewerkt:</span> 4 februari 2026</p>
+            <p><span class="font-bold">Last updated:</span> February 4, 2026</p>
           </section>
         </div>
       </section>
@@ -263,8 +317,8 @@
 
     <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div class="flex items-center gap-3">
+        <div class="flex flex-col items-center text-center gap-8">
+          <div class="flex items-center justify-center gap-4">
             <img
               src="assets/img/sandstone-logo.png"
               alt="Sandstone"
@@ -272,23 +326,68 @@
               loading="lazy"
               decoding="async"
             />
+
+            <div class="relative">
+              <select
+                id="lang-switcher-footer"
+                class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-6 transition-colors
+                       !border-0 !ring-0 !shadow-none !outline-none
+                       focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none"
+                aria-label="Language"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+
+              <span class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40" aria-hidden="true">▾</span>
+            </div>
           </div>
 
-          <div
-            class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold"
-          >
-            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">Privacy Policy</a>
-            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/terms-of-service">Terms of Service</a>
-            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/disclaimer">Disclaimer</a>
+          <div class="flex flex-wrap justify-center gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/en/privacy-policy">Privacy Policy</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/en/terms-of-service">Terms of Service</a>
+            <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/en/disclaimer">Disclaimer</a>
           </div>
-        </div>
 
-        <div class="mt-8 pt-8 border-t border-[var(--deep-navy)]/5 text-center">
-          <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
-            © 2026 Sandstone. All Rights Reserved.Sandstone Project Management Services L.L.C. (License NO #1275831) trading as 'Sandstone' | TRN: 104337349500003
-          </p>
+          <div class="w-full pt-8 border-t border-[var(--deep-navy)]/5">
+            <p class="text-[10px] text-[var(--deep-navy)]/30 uppercase tracking-[0.2em] font-extrabold">
+              © 2026 Sandstone. All Rights Reserved. Sandstone Project Management Services L.L.C. (License NO #1275831) trading as 'Sandstone' | TRN: 104337349500003
+            </p>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- Language switcher: header + footer -->
+    <script>
+      (function () {
+        var PATHS = {
+          nl: "/privacy-policy",
+          en: "/en/privacy-policy",
+          fr: "/fr/privacy-policy"
+        };
+
+        function getLangFromPath() {
+          var path = window.location.pathname || "/";
+          if (path.indexOf("/en/") === 0) return "en";
+          if (path.indexOf("/fr/") === 0) return "fr";
+          return "nl";
+        }
+
+        function wire(id) {
+          var el = document.getElementById(id);
+          if (!el) return;
+          el.value = getLangFromPath();
+          el.addEventListener("change", function () {
+            var target = PATHS[el.value] || PATHS.en;
+            window.location.href = target;
+          });
+        }
+
+        wire("lang-switcher");
+        wire("lang-switcher-footer");
+      })();
+    </script>
   </body>
 </html>
