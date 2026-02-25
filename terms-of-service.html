@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <script> 
-      (function() { var script = document.createElement('script'); 
-                   script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1"; 
-                   script.setAttribute("qooqie-callback-widget", ""); 
-                   script.id = "6985a9bbfbd9c2002e966a05"; 
-                   document.head.appendChild(script); })();
+    <script>
+      (function () {
+        var script = document.createElement("script");
+        script.src = "https://api-widget-callback.qooqie.com/widget/load_script/v1.1";
+        script.setAttribute("qooqie-callback-widget", "");
+        script.id = "6985a9bbfbd9c2002e966a05";
+        document.head.appendChild(script);
+      })();
     </script>
-    
+
     <!-- Google tag (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S43LV9GYEB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-S43LV9GYEB', {
-        anonymize_ip: true
-      });
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-S43LV9GYEB", { anonymize_ip: true });
     </script>
+
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -29,7 +31,13 @@
       content="Algemene voorwaarden van Sandstone. Lees de afspraken over onze dienstverlening, verantwoordelijkheden en gebruik van de website."
     />
     <meta name="robots" content="index,follow" />
+
+    <!-- Canonical + hreflang -->
     <link rel="canonical" href="https://cashback.sandstone.nl/terms-of-service" />
+    <link rel="alternate" hreflang="nl" href="https://cashback.sandstone.nl/terms-of-service" />
+    <link rel="alternate" hreflang="en" href="https://cashback.sandstone.nl/en/terms-of-service" />
+    <link rel="alternate" hreflang="fr" href="https://cashback.sandstone.nl/fr/terms-of-service" />
+    <link rel="alternate" hreflang="x-default" href="https://cashback.sandstone.nl/terms-of-service" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -40,6 +48,8 @@
       content="Algemene voorwaarden van Sandstone. Lees de afspraken over onze dienstverlening, verantwoordelijkheden en gebruik van de website."
     />
     <meta property="og:url" content="https://cashback.sandstone.nl/terms-of-service" />
+    <meta property="og:image" content="https://cashback.sandstone.nl/assets/img/sandstone-logo.png" />
+    <meta property="og:locale" content="nl_NL" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
@@ -61,6 +71,22 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Terms of Service",
+        "url": "https://cashback.sandstone.nl/terms-of-service",
+        "inLanguage": "nl",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Sandstone Cashback",
+          "url": "https://cashback.sandstone.nl/"
+        }
+      }
+    </script>
 
     <style type="text/tailwindcss">
       :root {
@@ -105,6 +131,13 @@
           scroll-margin-top: 7rem;
         }
       }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: none;
+      }
     </style>
   </head>
 
@@ -112,33 +145,43 @@
     <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <a class="flex items-center gap-3" href="/" aria-label="Terug naar homepage">
-          <img
-            src="assets/img/sandstone-logo.png"
-            alt="Sandstone"
-            class="h-20 w-auto"
-            loading="eager"
-            decoding="async"
-          />
+          <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="eager" decoding="async" />
         </a>
 
-        <div class="flex items-center gap-3">
-          <a
-            href="/"
-            class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] transition-colors"
-          >
-            Terug
-          </a>
-          <span class="text-sm text-[var(--deep-navy)]/30">/</span>
-          <span class="text-sm font-bold text-[var(--deep-navy)]">Terms of Service</span>
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-3">
+            <a href="/" class="text-sm font-bold text-[var(--deep-navy)]/70 hover:text-[var(--deep-navy)] transition-colors">
+              Terug
+            </a>
+            <span class="text-sm text-[var(--deep-navy)]/30">/</span>
+            <span class="text-sm font-bold text-[var(--deep-navy)]">Terms of Service</span>
+          </div>
+
+          <!-- Language switcher -->
+          <div class="relative">
+            <select
+              id="lang-switcher"
+              class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-6 transition-colors
+                     !border-0 !ring-0 !shadow-none !outline-none
+                     focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                     focus-visible:!ring-0"
+              aria-label="Taal"
+            >
+              <option value="nl">NL</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+            <span class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40" aria-hidden="true">
+              ▾
+            </span>
+          </div>
         </div>
       </div>
     </nav>
 
     <main class="pt-32 pb-16">
       <section class="max-w-4xl mx-auto px-6">
-        <h1 class="font-display font-extrabold tracking-tight leading-[1.08] mb-6">
-          Terms of Service
-        </h1>
+        <h1 class="font-display font-extrabold tracking-tight leading-[1.08] mb-6">Terms of Service</h1>
 
         <p class="text-base md:text-lg text-[var(--deep-navy)]/70 leading-relaxed mb-10">
           Deze algemene voorwaarden zijn van toepassing op het gebruik van de website en diensten van Sandstone.
@@ -237,18 +280,14 @@
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
             <h2 class="font-display font-extrabold mb-3">9. Wijzigingen</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
-              <p>
-                Sandstone kan deze voorwaarden wijzigen. De meest actuele versie is altijd beschikbaar op de website.
-              </p>
+              <p>Sandstone kan deze voorwaarden wijzigen. De meest actuele versie is altijd beschikbaar op de website.</p>
             </div>
           </section>
 
           <section class="bg-white/50 border border-[var(--deep-navy)]/10 rounded-3xl p-6 md:p-10">
             <h2 class="font-display font-extrabold mb-3">10. Toepasselijk recht</h2>
             <div class="space-y-4 text-[var(--deep-navy)]/70 leading-relaxed">
-              <p>
-                Op deze voorwaarden is uitsluitend Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland.
-              </p>
+              <p>Op deze voorwaarden is uitsluitend Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland.</p>
             </div>
           </section>
 
@@ -262,19 +301,31 @@
     <footer class="py-12 border-t border-[var(--deep-navy)]/5 bg-white/10">
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div class="flex items-center gap-3">
-            <img
-              src="assets/img/sandstone-logo.png"
-              alt="Sandstone"
-              class="h-20 w-auto"
-              loading="lazy"
-              decoding="async"
-            />
+          <div class="flex items-center gap-4">
+            <img src="assets/img/sandstone-logo.png" alt="Sandstone" class="h-20 w-auto" loading="lazy" decoding="async" />
+
+            <!-- Language switcher footer -->
+            <div class="relative">
+              <select
+                id="lang-switcher-footer"
+                class="bg-transparent font-bold text-sm tracking-wide text-[var(--deep-navy)]/60 hover:text-[var(--deep-navy)] cursor-pointer pr-6 transition-colors
+                       !border-0 !ring-0 !shadow-none !outline-none
+                       focus:!border-0 focus:!ring-0 focus:!shadow-none focus:!outline-none
+                       focus-visible:!ring-0"
+                aria-label="Taal"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+
+              <span class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-base opacity-40" aria-hidden="true">
+                ▾
+              </span>
+            </div>
           </div>
 
-          <div
-            class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold"
-          >
+          <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-[10px] text-[var(--deep-navy)]/40 uppercase tracking-[0.2em] font-extrabold">
             <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/privacy-policy">Privacy Policy</a>
             <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/terms-of-service">Terms of Service</a>
             <a class="hover:text-[var(--deep-navy)] transition-colors py-2" href="/disclaimer">Disclaimer</a>
@@ -288,5 +339,43 @@
         </div>
       </div>
     </footer>
+
+    <!-- Language switcher logic -->
+    <script>
+      (function () {
+        var STORAGE_KEY = "ss_lang_pref";
+
+        function getLangFromPath() {
+          var path = window.location.pathname || "/";
+          if (path.indexOf("/en/") === 0 || path === "/en") return "en";
+          if (path.indexOf("/fr/") === 0 || path === "/fr") return "fr";
+          return "nl";
+        }
+
+        function getTargetUrl(lang) {
+          if (lang === "en") return "/en/terms-of-service";
+          if (lang === "fr") return "/fr/terms-of-service";
+          return "/terms-of-service";
+        }
+
+        function wire(selectId) {
+          var el = document.getElementById(selectId);
+          if (!el) return;
+
+          el.value = getLangFromPath();
+
+          el.addEventListener("change", function () {
+            var lang = el.value;
+            try {
+              localStorage.setItem(STORAGE_KEY, lang);
+            } catch (e) {}
+            window.location.href = getTargetUrl(lang);
+          });
+        }
+
+        wire("lang-switcher");
+        wire("lang-switcher-footer");
+      })();
+    </script>
   </body>
 </html>
