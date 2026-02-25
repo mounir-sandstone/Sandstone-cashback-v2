@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+# Blokkeer interne API endpoints
+Disallow: /api/
+
+# Blokkeer eventuele preview of test folders
+Disallow: /_preview/
+Disallow: /_vercel/
+Disallow: /node_modules/
+
+# Sitemap
 Sitemap: https://cashback.sandstone.nl/sitemap.xml
